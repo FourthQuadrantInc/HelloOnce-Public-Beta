@@ -56,7 +56,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-zh-dark.svg">
-  <img alt="六项能力：本机记忆、文件与证据、为任意 Agent 提供 MCP、手机录音、Notion 同步、可配置模型。" src="assets/capabilities-zh-light.svg" width="100%">
+  <img alt="六项能力：本机私有数据库、文件与证据、为任意 Agent 提供 MCP、手机录音、Notion 同步、可配置模型。" src="assets/capabilities-zh-light.svg" width="100%">
 </picture>
 
 </div>
@@ -67,7 +67,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/lifecycle-zh-dark.svg">
-  <img alt="告诉 Codex 的一条事实被保存为待审核的本机记忆，之后 Claude Code 可以直接答出，用户无需重复解释。" src="assets/lifecycle-zh-light.svg" width="100%">
+  <img alt="告诉 Codex 的一条事实被保存为待审核的本机记录，之后 Claude Code 可以直接答出，用户无需重复解释。" src="assets/lifecycle-zh-light.svg" width="100%">
 </picture>
 
 <sub>说一次。下一个 Agent 已经知道。</sub>
@@ -257,7 +257,7 @@ HelloOnce 自己接收手机录音，不需要另外运行接收程序。
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/phone-zh-dark.svg">
-  <img alt="手机录音流程：在手机上录制并加密，经中转只传密文，在你的电脑上解密并转写，最后保存为待审核记忆。" src="assets/phone-zh-light.svg" width="100%">
+  <img alt="手机录音流程：在手机上录制并加密，经中转只传密文，在你的电脑上解密并转写，最后保存为待审核记录。" src="assets/phone-zh-light.svg" width="100%">
 </picture>
 
 <sub>密钥从不离开手机，所以中转手上没有任何可读内容。</sub>
@@ -288,7 +288,7 @@ HelloOnce 自己接收手机录音，不需要另外运行接收程序。
 - 录音在手机上用 AES-256-GCM 加密。中转收不到密钥，投递时只经手密文。
 - 电脑把配对密钥保存在只有本人可读的文件里，不经过设置接口。
 - 已 root 的手机会实时监听系统录音机，包括把录音存在私有目录的录音机；没有 root 时，你授权录音机的文件夹即可。
-- 在测试手机上端到端实测：从保存录音到生成转写后的记忆约 8 秒。
+- 在测试手机上端到端实测：从保存录音到生成转写后的记录约 8 秒。
 - 默认中转限制每台电脑新开的通道数量，7 天内无人取走的密文会被删除。
 
 **使用自己的中转。** 展开 **使用自己的中转**，填写地址、管理令牌（只用一次，不保存）和可选的 CA 证书。或者运行 `openworld-memory mobile pair --relay-url …`，把令牌放在 `FRIEND_RELAY_ADMIN_TOKEN` 里。
@@ -323,8 +323,8 @@ HelloOnce 自己接收手机录音，不需要另外运行接收程序。
 **连接 Notion。** 选择 **Notion → 连接**，授权你的页面，选择全部已授权内容或指定页面，然后开始同步。不需要自己创建开发者应用，也不需要填 OAuth 密钥。
 
 - **同步**默认每 15 分钟一次，前提是你的电脑和 HelloOnce 服务都在运行。
-- **Notion 面板**显示进度、已保存的记忆、错误和下次运行时间，支持手动同步、暂停／恢复、调整范围和断开。
-- **断开**会停止新的读取并撤销授权，已保存的记忆保留。
+- **Notion 面板**显示进度、已保存的记录、错误和下次运行时间，支持手动同步、暂停／恢复、调整范围和断开。
+- **断开**会停止新的读取并撤销授权，已保存的记录保留。
 - **限制。** 内容发现受 Notion API 限制，所以这不是一份保证完整的工作区备份。附件和媒体不会被下载或转写；不完整的内容会被报告出来。
 
 Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Google Drive 和 Zoom 的托管连接，会在托管连接服务开放后出现在平台区。已有的外部桥接注册仍放在**自定义设备与平台**下。全新安装显示 **Connect**；已授权的安装会按本机状态显示 **Manage connection**。详见[连接说明][connectors]。
@@ -346,7 +346,7 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/boundary-zh-dark.svg">
-  <img alt="数据边界图：记忆与证据留在你的电脑上；中转只经手密文；模型处理只发往你配置的端点。" src="assets/boundary-zh-light.svg" width="100%">
+  <img alt="数据边界图：记录与证据留在你的电脑上；中转只经手密文；模型处理只发往你配置的端点。" src="assets/boundary-zh-light.svg" width="100%">
 </picture>
 
 <sub>三个区域，三种不同的信任级别。</sub>
@@ -356,8 +356,8 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 - **你的原件、记录和证据**留在你的电脑上。
 - **需要模型处理的内容**只发往你配置的端点；登录 HelloOnce 账号时，则发往 friend.open-world.cn 上的账号模型服务。启用前请确认提供方的隐私政策。
 - **手机录音**在手机上用 AES-256-GCM 加密。中转收不到密钥，只经手密文。
-- **HelloOnce 网站**无法读取你的记忆，也无法读取你的本机访问令牌。
-- **安装包和 Release** 不含模型权重、个人数据、凭据、账号授权或任何记忆。
+- **HelloOnce 网站**无法读取你的私有数据库，也无法读取你的本机访问令牌。
+- **安装包和 Release** 不含模型权重、个人数据、凭据、账号授权或任何记录。
 
 <div align="center">
 
@@ -385,10 +385,10 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 
 <br>
 
-- 每个来源有自己的**只写令牌**。它可以提交事件，但不能读取记忆或修改设置。
+- 每个来源有自己的**只写令牌**。它可以提交事件，但不能读取你的私有数据库或修改设置。
 - 每个事件都有稳定的 `event_id`、带时区的 `occurred_at`、忠实还原的 `text`，以及可选的 JSON `attributes`。
 - 相同的重试会复用原来的任务；事件 ID 冲突会被拒绝。
-- 原始 JSON 会作为可哈希校验的证据保留，由此产生的记忆仍然是待审核的候选。
+- 原始 JSON 会作为可哈希校验的证据保留，由此产生的记录仍然是待审核的候选。
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/badge-caution-zh-dark.svg">

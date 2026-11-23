@@ -73,7 +73,7 @@ Your wallet runs on the computer you already own: it keeps your originals, build
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/lifecycle-en-dark.svg">
-  <img alt="A fact told to Codex is saved once into local memory as a reviewable candidate, then answered by Claude Code later without the user re-explaining it." src="assets/lifecycle-en-light.svg" width="100%">
+  <img alt="A fact told to Codex is saved once into your private database as a reviewable record, then answered by Claude Code later without the user re-explaining it." src="assets/lifecycle-en-light.svg" width="100%">
 </picture>
 
 <sub>Tell once. The next agent already knows.</sub>
@@ -97,7 +97,7 @@ Your wallet runs on the computer you already own: it keeps your originals, build
 
 HelloOnce is not tied to any one agent. It exposes its 13 tools over **stdio MCP** as one server, `my-data-wallet`, so any MCP-capable client can use it; the installer happens to configure Codex and Claude for you, and everything else can reach the same local instance through the authenticated HTTP MCP endpoint in the WebUI.
 
-Paste this prompt into **whichever agent you already use** on the computer that will hold your memory database:
+Paste this prompt into **whichever agent you already use** on the computer that will hold your private database:
 
 ```text
 Install HelloOnce v0.1.13 from the public release at
@@ -106,7 +106,7 @@ Download the `install.py` and `SHA256SUMS` release assets, verify the installer'
 then run `python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients codex,claude --start --autostart`.
 Back up the complete existing data directory before upgrading.
 If an older WebUI is running, stop it before replacing the executable;
-preserve my existing memory data and Codex/Claude MCP configurations.
+preserve my existing HelloOnce data and Codex/Claude MCP configurations.
 Verify that the MCP server starts and open the local WebUI.
 Let me enter any model endpoints or API keys in the WebUI.
 Do not request access to the private source repository.
@@ -273,7 +273,7 @@ HelloOnce receives phone recordings itself; no separate receiver program is need
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/phone-en-dark.svg">
-  <img alt="Phone recording pipeline: recorded and encrypted on the phone, relayed as ciphertext only, decrypted and transcribed on your computer, then saved as a reviewable memory." src="assets/phone-en-light.svg" width="100%">
+  <img alt="Phone recording pipeline: recorded and encrypted on the phone, relayed as ciphertext only, decrypted and transcribed on your computer, then saved as a reviewable record." src="assets/phone-en-light.svg" width="100%">
 </picture>
 
 <sub>The key never leaves the phone, so the relay never holds anything readable.</sub>
@@ -306,7 +306,7 @@ One-click pairing never replaces a model you configured.
 - The recording is encrypted with AES-256-GCM on the phone. The relay never receives the key and handles only ciphertext for delivery.
 - Your computer keeps the pairing secrets in an owner-only file outside the settings API.
 - On a rooted phone the app watches the system recorder in real time, including recorders that save to a private directory. Otherwise, you authorize the recorder's folder.
-- Measured end to end on a test phone: about 8 seconds from saving a recording to a transcribed memory.
+- Measured end to end on a test phone: about 8 seconds from saving a recording to a transcribed record.
 - The default relay limits new channels per computer and deletes ciphertext nobody collected within 7 days.
 
 **Use your own relay.** Open **Use your own relay** and enter its URL, administrator token (used once, not stored) and optional CA certificate. Or run `openworld-memory mobile pair --relay-url …` with the token in `FRIEND_RELAY_ADMIN_TOKEN`.
@@ -341,8 +341,8 @@ See the [phone recording guide][mobile] for the protocol and security boundaries
 **Connect Notion.** Choose **Notion → Connect**, authorize your pages, select all authorized content or individual pages, and start syncing. You do not need to create a developer app or enter an OAuth secret.
 
 - **Sync** runs every 15 minutes by default while your computer and the HelloOnce service are running.
-- **The Notion panel** shows progress, saved memories, errors and the next run. It supports manual sync, pause/resume, scope changes and disconnect.
-- **Disconnect** stops new reads and revokes access. Saved memories are kept.
+- **The Notion panel** shows progress, saved records, errors and the next run. It supports manual sync, pause/resume, scope changes and disconnect.
+- **Disconnect** stops new reads and revokes access. Saved records are kept.
 - **Limits.** Authorized-content discovery is limited by Notion's API, so this is not a guaranteed complete workspace backup. Attachments and media are not downloaded or transcribed; incomplete content is reported.
 
 Notion is built in. Hosted connections for Gmail, Outlook, GitHub, Google Calendar, Linear, Google Drive and Zoom appear in the platform section once the hosted connection service enables them. Existing external bridge registrations remain under **Custom devices and platforms**. A fresh installation shows **Connect**; an authorized installation shows **Manage connection** based on its own local state.
@@ -366,7 +366,7 @@ See the [connection guide][connectors].
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/boundary-en-dark.svg">
-  <img alt="Data boundary map: memory and evidence stay on your computer; the relay only ever handles ciphertext; model processing goes only to endpoints you configure." src="assets/boundary-en-light.svg" width="100%">
+  <img alt="Data boundary map: records and evidence stay on your computer; the relay only ever handles ciphertext; model processing goes only to endpoints you configure." src="assets/boundary-en-light.svg" width="100%">
 </picture>
 
 <sub>Three zones, three different levels of trust.</sub>
@@ -378,8 +378,8 @@ See the [connection guide][connectors].
 - **Your originals, records and evidence** stay on your computer.
 - **Content for model processing** goes only to the endpoints you configure — or, when signed in to a HelloOnce account, to the account's model service at friend.open-world.cn. Review the provider's privacy policy before enabling.
 - **Phone recordings** are encrypted with AES-256-GCM on the phone. The relay never receives the key and handles only ciphertext.
-- **The HelloOnce website** cannot read your memory or your local access token.
-- **Installers and releases** contain no model weights, personal data, credentials, account authorizations or memories.
+- **The HelloOnce website** cannot read your private database or your local access token.
+- **Installers and releases** contain no model weights, personal data, credentials, account authorizations or records.
 
 <div align="center">
 
@@ -409,10 +409,10 @@ Register local information sources, such as smart-home hubs, and submit their ev
 
 <br>
 
-- Each source gets its own **write-only token**. It can submit events but cannot read memory or change settings.
+- Each source gets its own **write-only token**. It can submit events but cannot read your private database or change settings.
 - Each event has a stable `event_id`, a timezone-aware `occurred_at`, faithful `text`, and optional JSON `attributes`.
 - Identical retries reuse the original job; conflicting event IDs are rejected.
-- The original JSON is kept as hash-verified evidence, and resulting memories remain reviewable candidates.
+- The original JSON is kept as hash-verified evidence, and resulting records remain reviewable candidates.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/badge-caution-dark.svg">

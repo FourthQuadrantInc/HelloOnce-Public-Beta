@@ -161,7 +161,7 @@
   <path fill="#F5F8FB" d="M99.499,10A100 100 0 0 1 10,99.499L10,58.146A59 59 0 0 0 58.146,10Z"/>
   <path fill="#F5F8FB" d="M-10,99.499A100 100 0 0 1 -99.499,10L-58.146,10A59 59 0 0 0 -10,58.146Z"/>
   <path fill="#F5F8FB" d="M-99.499,-10A100 100 0 0 1 -10,-99.499L-10,-58.146A59 59 0 0 0 -58.146,-10Z"/></g></g>
-<text x="578" y="286" font-size="22" font-weight="650" fill="#F5F8FB" class="s">friend. Memory</text>
+<text x="578" y="286" font-size="22" font-weight="650" fill="#F5F8FB" class="s">HelloOnce</text>
 <text x="550" y="326" font-size="15" font-weight="400" fill="#9DA9B7" class="s">seven tools · stdio MCP</text>
 <text x="640" y="578" font-size="18" font-weight="400" fill="#6F7B89" text-anchor="middle" class="s">One local server. Seven tools. Plus an authenticated HTTP endpoint in the WebUI.</text>
 </svg>

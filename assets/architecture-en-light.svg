@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" width="1280" height="470" role="img" aria-label="Files, phone recordings, Notion and the source API flow into friend. Memory on your computer, which serves Codex, Claude Code and Claude Desktop over MCP.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" width="1280" height="470" role="img" aria-label="Files, phone recordings, Notion and the source API flow into HelloOnce on your computer, which serves Codex, Claude Code and Claude Desktop over MCP.">
 <defs>
   <radialGradient id="halo" cx="50%" cy="50%" r="50%">
     <stop offset="0" stop-color="#FF7A70" stop-opacity=".55"/>
@@ -168,7 +168,7 @@
   <path fill="#0D1117" d="M99.499,10A100 100 0 0 1 10,99.499L10,58.146A59 59 0 0 0 58.146,10Z"/>
   <path fill="#0D1117" d="M-10,99.499A100 100 0 0 1 -99.499,10L-58.146,10A59 59 0 0 0 -10,58.146Z"/>
   <path fill="#0D1117" d="M-99.499,-10A100 100 0 0 1 -10,-99.499L-10,-58.146A59 59 0 0 0 -58.146,-10Z"/></g></g>
-<text x="544" y="146" font-size="26" font-weight="650" fill="#0D1117" class="s">friend. Memory</text>
+<text x="544" y="146" font-size="26" font-weight="650" fill="#0D1117" class="s">HelloOnce</text>
 <line x1="486" y1="184" x2="794" y2="184" stroke="#DDE3E9" stroke-width="1" stroke-linecap="round" />
 <circle cx="494" cy="210" r="3.6" fill="#FF4B47" />
     <text x="510" y="216" font-size="17" font-weight="400" fill="#59636E" class="m">Memories &amp; evidence</text><circle cx="494" cy="244" r="3.6" fill="#8B949E" />

@@ -85,7 +85,7 @@
 <line x1="902" y1="186" x2="1198" y2="186" stroke="#3E4855" stroke-width="1" stroke-linecap="round" />
 <circle cx="909" cy="214" r="3.4" fill="#FF6B63" />
   <text x="924" y="220" font-size="17" font-weight="400" fill="#D2DBE5" class="s">自建模型端点</text><circle cx="909" cy="248" r="3.4" fill="#FF6B63" />
-  <text x="924" y="254" font-size="17" font-weight="400" fill="#D2DBE5" class="s">friend. 账号（若已登录）</text><circle cx="909" cy="282" r="3.4" fill="#FF6B63" />
+  <text x="924" y="254" font-size="17" font-weight="400" fill="#D2DBE5" class="s">HelloOnce 账号（若已登录）</text><circle cx="909" cy="282" r="3.4" fill="#FF6B63" />
   <text x="924" y="288" font-size="17" font-weight="400" fill="#D2DBE5" class="s">语音：经中转调用 FireRed</text>
 <text x="902" y="368" font-size="16" font-weight="500" fill="#6F7B89" class="s">只发送你选择的内容。</text>
 

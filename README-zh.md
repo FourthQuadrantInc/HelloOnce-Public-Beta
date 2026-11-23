@@ -28,7 +28,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/glance-zh-dark.svg">
-  <img alt="版本 0.1.16，存储在你的电脑上，本机 WebUI 界面，MCP 提供 13 个工具。" src="assets/glance-zh-light.svg" width="100%">
+  <img alt="版本 0.1.17，存储在你的电脑上，本机 WebUI 界面，MCP 提供 13 个工具。" src="assets/glance-zh-light.svg" width="100%">
 </picture>
 
 </div>
@@ -90,14 +90,16 @@ friend. 不绑定任何单一 Agent。它通过 **stdio MCP** 以一个服务 `m
 把下面的提示词发给你**已经在用的那个 Agent**，在要存放数据的那台电脑上执行：
 
 ```text
-从公开发布页 https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.16 安装 friend. v0.1.16。
+从公开发布页 https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.17 安装 friend. v0.1.17。
 下载 Release 附件 `install.py` 和 `SHA256SUMS`，核对安装器的 SHA-256，
-然后运行 `python3 install.py --version v0.1.16 --clients codex,claude --start --autostart`。
+然后运行 `python3 install.py --version v0.1.17 --clients codex,claude --start --autostart`。
 升级前先完整备份现有数据目录。
 如果旧版 WebUI 正在运行，替换程序前先停止；保留现有数据和 Codex／Claude 的 MCP 配置。
 验证 MCP 服务能启动，并打开本机 WebUI。
 模型方面，告诉我可以在“设置 > 模型”里登录 friend. 账号（按余额计费），或者填自己的端点和 API 密钥。
 这一步由我自己操作：不要向我索取密码、验证码或密钥。
+friend. 会在这台 Mac 上加密我的数据：网页显示恢复码时，提醒我自己保存，不要读取、复制或复述它；
+如果 macOS 弹窗询问是否允许 friend. 的命令行，告诉我这是正常的，由我来回答。
 不要申请访问私有源码仓库。
 ```
 
@@ -114,18 +116,18 @@ friend. 不绑定任何单一 Agent。它通过 **stdio MCP** 以一个服务 `m
 
 <br>
 
-- **macOS（Apple Silicon）：** macOS 14 或更高版本。**0.1.16 只提供 macOS 安装包。**
+- **macOS（Apple Silicon）：** macOS 14 或更高版本。**0.1.17 只提供 macOS 安装包。**
 - **Linux（x86_64）：** glibc 2.35 或更高版本（如 Ubuntu 22.04+）。最新安装包：[0.1.9][release-019]。
 - **Windows（x64）：** Windows 10/11。最新安装包：[0.1.9][release-019]（用 `py -3 install.py --version v0.1.9`）。
 
-Linux 和 Windows 的 0.1.16 安装包会在通过各自平台测试后补上。没有 Intel Mac 独立包。运行安装器需要 Python 3.9+；独立可执行文件自带运行环境。
+Linux 和 Windows 的 0.1.17 安装包会在通过各自平台测试后补上。没有 Intel Mac 独立包。运行安装器需要 Python 3.9+；独立可执行文件自带运行环境。
 
 <details>
 <summary><img alt="" src="assets/marker-zh.svg" height="15"> <b>手动安装</b></summary>
 
 <br>
 
-1. 从 [v0.1.16 Release][release] 下载 `install.py` 和 `SHA256SUMS`。
+1. 从 [v0.1.17 Release][release] 下载 `install.py` 和 `SHA256SUMS`。
 2. 计算安装器的校验值，与 `SHA256SUMS` 中对应的一行比对：
 
    ```text
@@ -137,7 +139,7 @@ Linux 和 Windows 的 0.1.16 安装包会在通过各自平台测试后补上。
 3. 运行安装器：
 
    ```bash
-   python3 install.py --version v0.1.16 --clients codex,claude --start --autostart
+   python3 install.py --version v0.1.17 --clients codex,claude --start --autostart
    ```
 
 安装器接下来会：
@@ -159,9 +161,9 @@ Linux 和 Windows 的 0.1.16 安装包会在通过各自平台测试后补上。
 <br>
 
 ```text
-openworld-memory-v0.1.16-macos-arm64.tar.gz
-openworld-memory-v0.1.9-linux-x86_64.tar.gz     （0.1.16 暂未提供）
-openworld-memory-v0.1.9-windows-x86_64.zip      （0.1.16 暂未提供）
+openworld-memory-v0.1.17-macos-arm64.tar.gz
+openworld-memory-v0.1.9-linux-x86_64.tar.gz     （0.1.17 暂未提供）
+openworld-memory-v0.1.9-windows-x86_64.zip      （0.1.17 暂未提供）
 ```
 
 </details>
@@ -187,12 +189,13 @@ openworld-memory-v0.1.9-windows-x86_64.zip      （0.1.16 暂未提供）
 
 <br>
 
-## 03 · 0.1.16 有什么新内容
+## 03 · 0.1.17 有什么新内容
 
+- **记忆在本机加密。** 数据库（SQLCipher，AES-256）、原件（AES-256-GCM）和存放密钥的文件都已加密；解开它们的密钥在钥匙串里，只有 friend. 签名的程序能直接读取。其他程序不能再从磁盘读出你的记忆。更新后第一次启动会就地加密现有数据，并显示一次**恢复码**：请保存好，换 Mac 时只有它能打开你的数据。局限见 [0.1.17 说明][notes-0117]。
 - **登录即配好模型。** friend. 账号提供对话和看图、区分说话人的语音、搜索向量和重排序，不用填端点和密钥。摘要、向量搜索和回看图片也用这些模型。
 - **会计费。** 登录后，后台处理同样使用账号模型，并从余额扣费。
 - **平台官方连接、同步更稳**（来自 0.1.14 和 0.1.15 团队预览）。
-- **还没做到：** 本地数据尚未落盘加密，计划在 0.1.17 提供。
+- 0.1.16 没有单独发布，它的账号模型随 0.1.17 一起提供。
 
 <div align="center">
 
@@ -348,7 +351,7 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 
 - **你的原件、记录和证据**留在你的电脑上。
 - **需要模型处理的内容**发往你配置的端点。登录 friend. 账号时，会发到 friend. 的服务器，再转给提供账号模型的服务方（其中有第三方），自动的后台处理也是如此。
-- **还没做到：** 本地数据库、原件和设置尚未落盘加密。
+- **本机加密（macOS）。** 数据库、原件和存放密钥的文件用每个数据目录各自的密钥加密，密钥在钥匙串里。加密后，智能体必须带自己的连接令牌；会输出数据的命令行命令会先弹出 macOS 对话框确认。Linux 和 Windows 暂不默认加密。
 - **手机录音**在手机上用 AES-256-GCM 加密。中转收不到密钥，只经手密文。
 - **friend. 网站**无法读取你的记忆，也无法读取你的本机访问令牌。
 - **安装包和 Release** 不含模型权重、个人数据、凭据、账号授权或任何记忆。
@@ -420,7 +423,7 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 
 ## 09 · 更新
 
-版本 **0.1.16** 是继 0.1.13 之后的公开版本（见 [03](#03--0116-有什么新内容)）。本版只提供 macOS；Linux 和 Windows 暂时停在 0.1.9，应用内更新会提示该版本没有对应安装包。
+版本 **0.1.17** 是继 0.1.13 之后的公开版本（见 [03](#03--0117-有什么新内容)）。本版只提供 macOS；Linux 和 Windows 暂时停在 0.1.9，应用内更新会提示该版本没有对应安装包。
 
 在 **设置 → 通用 → 软件更新** 中更新。**更新并重启**会校验安装包、备份本地数据和配置，并检查重启后的应用状态。不需要云端账号，已有连接和本地数据都会保留。详见[更新与恢复说明][updates]。
 
@@ -454,10 +457,11 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 <sub><a href="#top">回到顶部</a> &nbsp;·&nbsp; <a href="README.md">English</a> &nbsp;·&nbsp; <a href="https://friend.open-world.cn/app/">friend.open-world.cn</a></sub>
 </div>
 
-[release]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.16
+[release]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.17
+[notes-0117]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.17
 [release-019]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.9
 [releases]: https://github.com/OpenWorld-Agent/friend./releases
-[mobile]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/MOBILE-VOICE.md
-[connectors]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/CONNECTORS.md
-[source-api]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/SOURCE-API.md
-[updates]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/UPDATES.md
+[mobile]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/MOBILE-VOICE.md
+[connectors]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/CONNECTORS.md
+[source-api]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/SOURCE-API.md
+[updates]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/UPDATES.md

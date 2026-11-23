@@ -30,7 +30,7 @@ Keep your conversations, meeting notes and everyday records in one place, decide
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/glance-en-dark.svg">
-  <img alt="Version 0.1.16, storage on your computer, a local WebUI, and MCP with 13 tools." src="assets/glance-en-light.svg" width="100%">
+  <img alt="Version 0.1.17, storage on your computer, a local WebUI, and MCP with 13 tools." src="assets/glance-en-light.svg" width="100%">
 </picture>
 
 </div>
@@ -98,16 +98,19 @@ friend. is not tied to any one agent. It exposes its 13 tools over **stdio MCP**
 Paste this prompt into **whichever agent you already use** on the computer that will hold your memory database:
 
 ```text
-Install friend. v0.1.16 from the public release at
-https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.16.
+Install friend. v0.1.17 from the public release at
+https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.17.
 Download the `install.py` and `SHA256SUMS` release assets, verify the installer's SHA-256,
-then run `python3 install.py --version v0.1.16 --clients codex,claude --start --autostart`.
+then run `python3 install.py --version v0.1.17 --clients codex,claude --start --autostart`.
 Back up the complete existing data directory before upgrading.
 If an older WebUI is running, stop it before replacing the executable;
 preserve my existing memory data and Codex/Claude MCP configurations.
 Verify that the MCP server starts and open the local WebUI.
 For models, tell me I can sign in to a friend. account in Settings > Models (billed to my balance)
 or enter my own endpoints and API keys there. I do this myself: never ask me for a password, code or key.
+friend. encrypts my data on this Mac: when the WebUI shows a recovery code, tell me to save it myself
+and never read, copy or repeat it; if a macOS dialog asks whether to allow friend.'s command line,
+tell me it is expected and let me answer it.
 Do not request access to the private source repository.
 ```
 
@@ -126,18 +129,18 @@ Then **restart that agent** so it loads the new MCP configuration.
 
 <br>
 
-- **macOS (Apple Silicon):** macOS 14 or later. **0.1.16 is available for macOS only.**
+- **macOS (Apple Silicon):** macOS 14 or later. **0.1.17 is available for macOS only.**
 - **Linux (x86_64):** glibc 2.35 or later (for example, Ubuntu 22.04+). Latest package: [0.1.9][release-019].
 - **Windows (x64):** Windows 10/11. Latest package: [0.1.9][release-019] (use `py -3 install.py --version v0.1.9`).
 
-Linux and Windows packages of 0.1.16 will follow once they pass their platform tests. There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
+Linux and Windows packages of 0.1.17 will follow once they pass their platform tests. There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
 
 <details>
 <summary><img alt="" src="assets/marker-en.svg" height="15"> <b>Manual installation</b></summary>
 
 <br>
 
-1. Download `install.py` and `SHA256SUMS` from the [v0.1.16 release][release].
+1. Download `install.py` and `SHA256SUMS` from the [v0.1.17 release][release].
 2. Hash the installer and compare it with its line in `SHA256SUMS`:
 
    ```text
@@ -149,7 +152,7 @@ Linux and Windows packages of 0.1.16 will follow once they pass their platform t
 3. Run the installer:
 
    ```bash
-   python3 install.py --version v0.1.16 --clients codex,claude --start --autostart
+   python3 install.py --version v0.1.17 --clients codex,claude --start --autostart
    ```
 
 The installer then:
@@ -173,9 +176,9 @@ You can also extract a native archive yourself and run `./openworld-memory setup
 <br>
 
 ```text
-openworld-memory-v0.1.16-macos-arm64.tar.gz
-openworld-memory-v0.1.9-linux-x86_64.tar.gz     (0.1.16 not yet available)
-openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.16 not yet available)
+openworld-memory-v0.1.17-macos-arm64.tar.gz
+openworld-memory-v0.1.9-linux-x86_64.tar.gz     (0.1.17 not yet available)
+openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.17 not yet available)
 ```
 
 </details>
@@ -203,12 +206,13 @@ openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.16 not yet available)
 
 <br>
 
-## 03 · What's new in 0.1.16
+## 03 · What's new in 0.1.17
 
+- **Your memory is encrypted on this Mac.** Databases (SQLCipher, AES-256), originals (AES-256-GCM) and the files holding secrets are encrypted with a key only friend.'s signed program unlocks from the Keychain without asking. Other programs can no longer read your memory from disk. The first start after the update encrypts the existing data in place and shows a **recovery code** once: save it, since only that code opens your data on a new Mac. Limits are in the [0.1.17 notes][notes-0117].
 - **Sign in and the models are set up.** A friend. account provides chat and pictures, speech with speaker labels, search vectors and reranking, with no endpoint or key. Summaries, vector search and second looks at pictures use them too.
 - **It is billed.** When signed in, background processing also uses the account's models and your balance.
 - **Official platform connections and steadier syncing** (from the 0.1.14 and 0.1.15 team previews).
-- **Not yet:** local data is not encrypted at rest; that is planned for 0.1.17.
+- 0.1.16 was not published on its own; its account models arrive with 0.1.17.
 
 <div align="center">
 
@@ -370,7 +374,7 @@ See the [connection guide][connectors].
 
 - **Your originals, records and evidence** stay on your computer.
 - **Content for model processing** goes to the endpoints you configure. When signed in to a friend. account it goes to friend.'s servers and on to the providers serving the account's models, some of them third parties, including for automatic background processing.
-- **Not yet:** the local database, originals and settings are not encrypted at rest.
+- **Encrypted on disk (macOS).** The database, originals and secret files are encrypted with a per-directory key kept in the Keychain. Once encrypted, an agent needs its own connection token, and command-line commands that print your data ask in a macOS dialog first. Linux and Windows are not encrypted by default yet.
 - **Phone recordings** are encrypted with AES-256-GCM on the phone. The relay never receives the key and handles only ciphertext.
 - **The friend. website** cannot read your memory or your local access token.
 - **Installers and releases** contain no model weights, personal data, credentials, account authorizations or memories.
@@ -444,7 +448,7 @@ See the [source API contract and examples][source-api], including Windows PowerS
 
 ## 09 · Updates
 
-Version **0.1.16** follows the public 0.1.13 (see [03](#03--whats-new-in-0116)). It is available for macOS; Linux and Windows stay on 0.1.9 for now, and their updater reports no package for 0.1.16.
+Version **0.1.17** follows the public 0.1.13 (see [03](#03--whats-new-in-0117)). It is available for macOS; Linux and Windows stay on 0.1.9 for now, and their updater reports no package for 0.1.17.
 
 Update from **Settings → General → Software updates**. **Update and restart** verifies the package, backs up your data and configuration, and checks the restarted app. No cloud account is required, and existing connections and local data are kept. See the [update and recovery guide][updates].
 
@@ -480,10 +484,11 @@ This is the public distribution repository for friend. (the `openworld-memory` a
 
 <br>
 
-[release]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.16
+[release]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.17
+[notes-0117]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.17
 [release-019]: https://github.com/OpenWorld-Agent/friend./releases/tag/v0.1.9
 [releases]: https://github.com/OpenWorld-Agent/friend./releases
-[mobile]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/MOBILE-VOICE.md
-[connectors]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/CONNECTORS.md
-[source-api]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/SOURCE-API.md
-[updates]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.16/UPDATES.md
+[mobile]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/MOBILE-VOICE.md
+[connectors]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/CONNECTORS.md
+[source-api]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/SOURCE-API.md
+[updates]: https://github.com/OpenWorld-Agent/friend./releases/download/v0.1.17/UPDATES.md

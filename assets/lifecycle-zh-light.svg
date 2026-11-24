@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 302" width="1280" height="302" role="img" aria-label="告诉 Codex 的一条事实被保存为待审核的本机记忆，之后 Claude Code 可以直接答出，用户无需重复解释。">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 302" width="1280" height="302" role="img" aria-label="告诉 Codex 的一条事实作为一条待审核的记录存进私有数据库，之后 Claude Code 可以直接答出，用户无需重复解释。">
 <defs>
   <radialGradient id="halo" cx="50%" cy="50%" r="50%">
     <stop offset="0" stop-color="#FF7A70" stop-opacity=".55"/>
@@ -61,8 +61,8 @@
 
 <path id="lc1" d="M350,172 C384,172 428,172 462,172" fill="none" stroke="#C9D3DD" stroke-width="1.6" stroke-dasharray="3 7" class="march"/>
 <path id="lc2" d="M818,172 C852,172 896,172 930,172" fill="none" stroke="#C9D3DD" stroke-width="1.6" stroke-dasharray="3 7" class="march"/>
-<text x="406" y="157" font-size="12" font-weight="600" fill="#8B949E" text-anchor="middle" class="m">memory_add</text>
-<text x="874" y="157" font-size="12" font-weight="600" fill="#8B949E" text-anchor="middle" class="m">memory_search</text>
+<text x="406" y="157" font-size="12" font-weight="600" fill="#8B949E" text-anchor="middle" class="m">data_add</text>
+<text x="874" y="157" font-size="12" font-weight="600" fill="#8B949E" text-anchor="middle" class="m">data_search</text>
 <g>
   <animateMotion dur="1.25s" begin="0s" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines=".42 0 .28 1"><mpath href="#lc1"/></animateMotion>
   <circle r="6.300000000000001" fill="#FF4B47" opacity="0"><animate attributeName="r" values="2.52;6.300000000000001;6.300000000000001;2.52" keyTimes="0;.14;.86;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1" dur="1.25s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.115;.115;0" keyTimes="0;.14;.86;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1" dur="1.25s" begin="0s" repeatCount="indefinite"/></circle>

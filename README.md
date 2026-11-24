@@ -5,13 +5,13 @@
   <img alt="HelloOnce Open your world to your agent." src="assets/hero-light.svg" width="100%">
 </picture>
 
-### Your personal data wallet for AI.
+### Say hello once. Every agent knows you.
 
-Keep your conversations, meeting notes and everyday records in one place, decide what to share, and connect it to your agents through MCP, so they understand you without being told everything from scratch.
+HelloOnce is your private database. The originals of your conversations, recordings, photos, mail and calendar stay on your computer, read into records that each point back to their source. Every agent you allow gets a data wallet: it says what it needs and why, gets facts with their sources, and every handoff is written down.
 
-[**Install**](#02--install) &nbsp;·&nbsp; [Releases][releases] &nbsp;·&nbsp; [Website](https://friend.open-world.cn/app/) &nbsp;·&nbsp; [Chinese](README-zh.md)
+[**Install**](#02--install) &nbsp;·&nbsp; [Releases][releases] &nbsp;·&nbsp; [Chinese](README-zh.md)
 
-> **friend. is now HelloOnce**, published by Fourth Quadrant. The 0.1.13 app still shows its earlier name, friend.; the new name arrives with the next release. Releases moved to this repository: installations up to 0.1.13 find no updates in **Settings → General** — reinstall once with the installer below.
+> **HelloOnce 0.1.19**, published by Fourth Quadrant: a new home and connections page, and a first run that sets itself up. Installed 0.1.13 or earlier? It finds no updates in **Settings → General**: install once more with the prompt below. Your data is kept.
 
 <br>
 
@@ -32,7 +32,7 @@ Keep your conversations, meeting notes and everyday records in one place, decide
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/glance-en-dark.svg">
-  <img alt="Version 0.1.13, storage on your computer, a local WebUI, and MCP with 13 tools." src="assets/glance-en-light.svg" width="100%">
+  <img alt="Version 0.1.19, storage on your computer, a local WebUI, and MCP with 14 tools." src="assets/glance-en-light.svg" width="100%">
 </picture>
 
 </div>
@@ -73,7 +73,7 @@ Your wallet runs on the computer you already own: it keeps your originals, build
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/lifecycle-en-dark.svg">
-  <img alt="A fact told to Codex is saved once into local memory as a reviewable candidate, then answered by Claude Code later without the user re-explaining it." src="assets/lifecycle-en-light.svg" width="100%">
+  <img alt="A fact told to Codex is saved once into your private database as a record waiting for review, then answered by Claude Code later without the user re-explaining it." src="assets/lifecycle-en-light.svg" width="100%">
 </picture>
 
 <sub>Tell once. The next agent already knows.</sub>
@@ -100,7 +100,7 @@ HelloOnce works with any agent that speaks MCP. One agent installs it; the page 
 Copy this into **the agent you already use** (Claude Code, Codex, Cursor…), on the computer that will hold your wallet:
 
 ```text
-Set up HelloOnce on this computer: my personal data wallet, which any agent I approve can read over MCP.
+Set up HelloOnce on this computer: my private database, which every agent I approve reads through its HelloOnce Data Wallet over MCP.
 
 Fetch the install guide with curl (not a summarizing web reader), read all of it, then follow it exactly:
 https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/docs/AGENT-INSTALL.md
@@ -126,18 +126,18 @@ The page that opens shows **Get started** on its home: **let your assistants use
 
 <br>
 
-- **macOS (Apple Silicon):** macOS 14 or later. **0.1.13 is available for macOS only.**
+- **macOS (Apple Silicon):** macOS 14 or later. **0.1.19 is available for macOS only.**
 - **Linux (x86_64):** glibc 2.35 or later (for example, Ubuntu 22.04+). Latest package: [0.1.9][release-019].
 - **Windows (x64):** Windows 10/11. Latest package: [0.1.9][release-019] (use `py -3 install.py --version v0.1.9 --repo FourthQuadrantInc/HelloOnce-Public-Beta`).
 
-Linux and Windows packages of 0.1.13 will follow once they pass their platform tests. There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
+Linux and Windows packages of 0.1.19 will follow once they pass their platform tests. There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
 
 <details>
 <summary><img alt="" src="assets/marker-en.svg" height="15"> <b>Manual installation</b></summary>
 
 <br>
 
-1. Download `install.py` and `SHA256SUMS` from the [v0.1.13 release][release].
+1. Download `install.py` and `SHA256SUMS` from the [v0.1.19 release][release].
 2. Hash the installer and compare it with its line in `SHA256SUMS`:
 
    ```text
@@ -149,7 +149,7 @@ Linux and Windows packages of 0.1.13 will follow once they pass their platform t
 3. Run the installer:
 
    ```bash
-   python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
+   python3 install.py --version v0.1.19 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
    ```
 
 The installer then:
@@ -161,7 +161,7 @@ The installer then:
 
 `--start` starts the WebUI now. `--autostart` is optional and takes effect at the next user login.
 
-You can also extract a native archive yourself and run `./openworld-memory setup --clients claude --start --autostart` (`openworld-memory.exe` on Windows).
+You can also extract a native archive yourself and run `./helloonce setup --clients claude --start --autostart` (`helloonce.exe` on Windows).
 
 </details>
 
@@ -173,9 +173,9 @@ You can also extract a native archive yourself and run `./openworld-memory setup
 <br>
 
 ```text
-openworld-memory-v0.1.13-macos-arm64.tar.gz
-openworld-memory-v0.1.9-linux-x86_64.tar.gz     (0.1.13 not yet available)
-openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.13 not yet available)
+helloonce-v0.1.19-macos-arm64.tar.gz
+openworld-memory-v0.1.9-linux-x86_64.tar.gz     (0.1.19 not yet available)
+openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.19 not yet available)
 ```
 
 </details>
@@ -187,8 +187,7 @@ openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.13 not yet available)
 ### First run
 
 - **WebUI.** Listens on `http://127.0.0.1:8765/` by default and opens the new interface; the classic one is at `/classic`. Setup prints a **private local login link**; do not share it. Signing in once stays valid.
-- **Welcome guide.** On first use a welcome document opens with the steps to connect agents, set up models and bring in your data. You can reopen it at any time.
-- **Chat tab.** The **Chat** tab at [friend.open-world.cn/app](https://friend.open-world.cn/app/) checks for the local app and opens its WebUI. If the app is unavailable, Chat shows the installation prompt and an **Open local WebUI** button.
+- **Get started.** On first use the home page shows three steps: let your other agents use HelloOnce, add a source, and tell HelloOnce which names are yours. To have your data organized, sign in to a HelloOnce account or add your own model API under **Settings → Models**.
 - **Media.** Audio and video processing requires system FFmpeg/ffprobe.
 - **Language.** Switch the interface between English and Simplified Chinese in **Settings → Appearance → Language**. Enable content languages for generated Records summaries; saved translations are reused when switching languages. Originals, names, files and drafts keep their original language.
 
@@ -203,18 +202,20 @@ openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.13 not yet available)
 
 <br>
 
-## 03 · What's new in 0.1.13
+## 03 · What's new in 0.1.19
 
-The first public release since 0.1.9. It includes the 0.1.10–0.1.12.1 team previews.
+The first public release since 0.1.13. It includes the 0.1.14–0.1.18 team previews.
 
-- **My Data Wallet for your agents.** One MCP server, `my-data-wallet`. `data_catalog` outlines what HelloOnce holds by need (identity, health, work, schedule, travel and more: 14 scenes) and what is current; `data_search` takes a short table of questions — what the agent needs, why, and what it will change — and answers each with values and their evidence. Claude Code and Codex also get a short note at the start of each session telling them what HelloOnce holds.
-- **Originals first.** Every file, message and event is kept once as an original, and each record points to the place it came from (a page, a slide, a moment in a recording). HEIC/AVIF photos, Office and iWork documents and mail are read. When sources disagree, both are kept and marked.
-- **This Mac's sources** (macOS, each off until you turn it on): Photos, Voice Memos, Calendar, Reminders, Notes, Safari history, call history, and the chats of iMessage and WhatsApp.
-- **Recordings** can tell speakers apart and recognise which of them is you (with a speech model that diarizes); long recordings are read in parallel parts, and a transcript can be asked about before its records are written.
-- **Faster processing.** 16 jobs at a time by default (at most 8 with audio or pictures); what happened in the last 24 hours goes first; the same file is read only once.
-- **Pair devices by QR code.** An app on another device becomes a personal connection that sends text and files through the encrypted relay.
+- **A first run that sets itself up.** One agent installs HelloOnce and connects only itself; the home page's **Get started** lists the other agents on this computer (one click connects each and opens it), then a source, then the names that are yours. Every source starts with the last three months; its ··· menu brings in the past year or everything.
+- **A new home and connections page.** Home is about you: your name and a one-line summary, what still waits for your answer, an overview by day, week or month, and the newest records. Connections has **Sources** and **Agents**, public platforms grouped by what they are for, and one detail window for every source: what it reads, what it never reads, and its own records.
+- **Sign in and the models are set up.** A HelloOnce account sets up chat, pictures, speech and embeddings: no endpoint, no key. Your own endpoints still work, per model.
+- **Encrypted on your computer.** Your data is encrypted at rest, so other programs cannot read it straight from disk.
+- **Official platform connections.** Notion, GitHub, Linear, Todoist, TickTick and Raindrop sign in on the platform's own page and read straight into your computer.
+- **This computer as one connection.** Photos, voice memos, messages, calendar, reminders, notes, calls and browsing history (Safari, Chrome and Edge) each have their own switch.
+- **For agents:** a new tool, `data_changes`, tells an agent what changed since it last looked. An agent can correct or withdraw what it reported; other agents see it only after you confirm.
+- **Organizing goes newest first**, and an older item can never overwrite a newer one.
 
-Upgrading migrates the data directory on first start. Agent chats captured by 0.1.8/0.1.9 return to search after they are re-read by conversation window, which needs a configured model.
+The data files take their new names on first start; only names change. The command is now `helloonce` (`openworld-memory` still works). See the [0.1.19 release notes][notes].
 
 <div align="center">
 
@@ -237,6 +238,7 @@ HelloOnce serves one MCP server, `my-data-wallet`, to Codex and Claude over stdi
 | `data_search` | Answers a short table of questions (need, reason, use) with values and their evidence |
 | `data_get` | One record, page, series or original by its key |
 | `data_handoff` | Picks up a conversation you had in another agent |
+| `data_changes` | The keys that changed since a cursor, for an agent that keeps working between conversations |
 | `data_add` | Reports a durable fact, preference or change you shared |
 | `data_update` · `data_delete` | Revise or delete one of your records (your own login only) |
 | `data_sources` | The evidence and sources behind one record |
@@ -272,7 +274,7 @@ HelloOnce receives phone recordings itself; no separate receiver program is need
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/phone-en-dark.svg">
-  <img alt="Phone recording pipeline: recorded and encrypted on the phone, relayed as ciphertext only, decrypted and transcribed on your computer, then saved as a reviewable memory." src="assets/phone-en-light.svg" width="100%">
+  <img alt="Phone recording pipeline: recorded and encrypted on the phone, relayed as ciphertext only, decrypted and transcribed on your computer, then saved as records waiting for review." src="assets/phone-en-light.svg" width="100%">
 </picture>
 
 <sub>The key never leaves the phone, so the relay never holds anything readable.</sub>
@@ -281,8 +283,8 @@ HelloOnce receives phone recordings itself; no separate receiver program is need
 
 <br>
 
-1. **Install the app.** Install the HelloOnce Android app ([Android demo APK](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.7/friend-v1.0.1-debug.apk); Android 10 or later).
-2. **Pair.** In the local WebUI, open **Settings → Phone recordings** and click **One-click pairing**. Nothing needs to be configured: HelloOnce has a built-in default relay and its certificate, opens a channel and shows a QR code. From a terminal, run `openworld-memory mobile pair`.
+1. **Install the app.** Install the HelloOnce Android app ([Android demo APK](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/helloonce-android-v1.0.1-demo.apk); Android 10 or later).
+2. **Pair.** In the local WebUI, open **Settings → Phone recordings** and click **One-click pairing**. Nothing needs to be configured: HelloOnce has a built-in default relay and its certificate, opens a channel and shows a QR code. From a terminal, run `helloonce mobile pair`.
 3. **Scan.** Tap **Scan to pair** in the app and scan the QR code.
 4. **Record.** Use the phone's normal recorder. New recordings are transcribed and saved as records with their original.
 
@@ -298,19 +300,18 @@ The pairing QR code contains private keys. Do not screenshot or share it. It hid
 One-click pairing never replaces a model you configured.
 
 <details>
-<summary><img alt="" src="assets/marker-en.svg" height="15"> <b>Security details, your own relay, and migrating from <code>friend_receiver.py</code></b></summary>
+<summary><img alt="" src="assets/marker-en.svg" height="15"> <b>Security details, your own relay</b></summary>
 
 <br>
 
 - The recording is encrypted with AES-256-GCM on the phone. The relay never receives the key and handles only ciphertext for delivery.
 - Your computer keeps the pairing secrets in an owner-only file outside the settings API.
 - On a rooted phone the app watches the system recorder in real time, including recorders that save to a private directory. Otherwise, you authorize the recorder's folder.
-- Measured end to end on a test phone: about 8 seconds from saving a recording to a transcribed memory.
+- Measured end to end on a test phone: about 8 seconds from saving a recording to transcribed records.
 - The default relay limits new channels per computer and deletes ciphertext nobody collected within 7 days.
 
-**Use your own relay.** Open **Use your own relay** and enter its URL, administrator token (used once, not stored) and optional CA certificate. Or run `openworld-memory mobile pair --relay-url …` with the token in `FRIEND_RELAY_ADMIN_TOKEN`.
+**Use your own relay.** Open **Use your own relay** and enter its URL, administrator token (used once, not stored) and optional CA certificate. Or run `helloonce mobile pair --relay-url …` (the [phone recording guide][mobile] says where the token goes).
 
-**Already using the standalone `friend_receiver.py`?** Run `openworld-memory mobile import --config <path>` to keep the existing phone pairing.
 
 See the [phone recording guide][mobile] for the protocol and security boundaries.
 
@@ -340,8 +341,8 @@ See the [phone recording guide][mobile] for the protocol and security boundaries
 **Connect Notion.** Choose **Notion → Connect**, authorize your pages, select all authorized content or individual pages, and start syncing. You do not need to create a developer app or enter an OAuth secret.
 
 - **Sync** runs every 15 minutes by default while your computer and the HelloOnce service are running.
-- **The Notion panel** shows progress, saved memories, errors and the next run. It supports manual sync, pause/resume, scope changes and disconnect.
-- **Disconnect** stops new reads and revokes access. Saved memories are kept.
+- **The Notion panel** shows progress, saved records, errors and the next run. It supports manual sync, pause/resume, scope changes and disconnect.
+- **Disconnect** stops new reads and revokes access. Saved records are kept.
 - **Limits.** Authorized-content discovery is limited by Notion's API, so this is not a guaranteed complete workspace backup. Attachments and media are not downloaded or transcribed; incomplete content is reported.
 
 Notion is built in. Hosted connections for Gmail, Outlook, GitHub, Google Calendar, Linear, Google Drive and Zoom appear in the platform section once the hosted connection service enables them. Existing external bridge registrations remain under **Custom devices and platforms**. A fresh installation shows **Connect**; an authorized installation shows **Manage connection** based on its own local state.
@@ -365,7 +366,7 @@ See the [connection guide][connectors].
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/boundary-en-dark.svg">
-  <img alt="Data boundary map: memory and evidence stay on your computer; the relay only ever handles ciphertext; model processing goes only to endpoints you configure." src="assets/boundary-en-light.svg" width="100%">
+  <img alt="Data boundary map: your private database and its evidence stay on your computer; the relay only ever handles ciphertext; model processing goes only to endpoints you configure." src="assets/boundary-en-light.svg" width="100%">
 </picture>
 
 <sub>Three zones, three different levels of trust.</sub>
@@ -375,10 +376,10 @@ See the [connection guide][connectors].
 <br>
 
 - **Your originals, records and evidence** stay on your computer.
-- **Content for model processing** goes only to the endpoints you configure — or, when signed in to a HelloOnce account, to the account's model service at friend.open-world.cn. Review the provider's privacy policy before enabling.
+- **Content for model processing** goes only to the endpoints you configure — or, when signed in to a HelloOnce account, to the account's model service. Review the provider's privacy policy before enabling.
 - **Phone recordings** are encrypted with AES-256-GCM on the phone. The relay never receives the key and handles only ciphertext.
-- **The HelloOnce website** cannot read your memory or your local access token.
-- **Installers and releases** contain no model weights, personal data, credentials, account authorizations or memories.
+- **The HelloOnce website** cannot read your private database or your local access token.
+- **Installers and releases** contain no model weights, personal data, credentials, account authorizations or records.
 
 <div align="center">
 
@@ -408,10 +409,10 @@ Register local information sources, such as smart-home hubs, and submit their ev
 
 <br>
 
-- Each source gets its own **write-only token**. It can submit events but cannot read memory or change settings.
+- Each source gets its own **write-only token**. It can submit events but cannot read your private database or change settings.
 - Each event has a stable `event_id`, a timezone-aware `occurred_at`, faithful `text`, and optional JSON `attributes`.
 - Identical retries reuse the original job; conflicting event IDs are rejected.
-- The original JSON is kept as hash-verified evidence, and resulting memories remain reviewable candidates.
+- The original JSON is kept as hash-verified evidence, and resulting records wait for your review.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/badge-caution-dark.svg">
@@ -449,7 +450,7 @@ See the [source API contract and examples][source-api], including Windows PowerS
 
 ## 09 · Updates
 
-Version **0.1.13** is the first public release since 0.1.9 (see [03](#03--whats-new-in-0113)). It is available for macOS; Linux and Windows stay on 0.1.9 for now, and their updater reports no package for 0.1.13.
+Version **0.1.19** is the first public release since 0.1.13 (see [03](#03--whats-new-in-0119)). It is available for macOS; Linux and Windows stay on 0.1.9 for now, and their updater reports no package for 0.1.19.
 
 Update from **Settings → General → Software updates**. **Update and restart** verifies the package, backs up your data and configuration, and checks the restarted app. No cloud account is required, and existing connections and local data are kept. See the [update and recovery guide][updates].
 
@@ -473,22 +474,23 @@ The original v0.1.7 build has no updater; install once manually with this releas
 
 ## 10 · About this repository
 
-This is the public distribution repository for HelloOnce (the `openworld-memory` application). It contains documentation only. The complete application source code is not published here.
+This is the public distribution repository for HelloOnce (the `helloonce` application). It contains documentation only. The complete application source code is not published here.
 
 [Release assets][releases] contain compiled executables, a small installer, checksums and bundled license notices. They do **not** contain the full source tree, development handoff documents or example datasets. Applicable license texts are included inside each native archive. Publishing these binaries does not make every component open source.
 
 <br>
 
 <div align="center">
-<sub><a href="#top">Back to top</a> &nbsp;·&nbsp; <a href="README-zh.md">简体中文</a> &nbsp;·&nbsp; <a href="https://friend.open-world.cn/app/">friend.open-world.cn</a></sub>
+<sub><a href="#top">Back to top</a> &nbsp;·&nbsp; <a href="README-zh.md">简体中文</a></sub>
 </div>
 
 <br>
 
-[release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.13
+[release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.19
 [release-019]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.9
 [releases]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases
-[mobile]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.13/MOBILE-VOICE.md
-[connectors]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.13/CONNECTORS.md
-[source-api]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.13/SOURCE-API.md
-[updates]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.13/UPDATES.md
+[notes]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/0.1.19.md
+[mobile]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/MOBILE-VOICE.md
+[connectors]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/CONNECTORS.md
+[source-api]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/SOURCE-API.md
+[updates]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/UPDATES.md

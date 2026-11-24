@@ -171,12 +171,12 @@
 <text x="544" y="146" font-size="26" font-weight="650" fill="#0D1117" class="s">HelloOnce</text>
 <line x1="486" y1="184" x2="794" y2="184" stroke="#DDE3E9" stroke-width="1" stroke-linecap="round" />
 <circle cx="494" cy="210" r="3.6" fill="#FF4B47" />
-    <text x="510" y="216" font-size="17" font-weight="400" fill="#59636E" class="m">Memories &amp; evidence</text><circle cx="494" cy="244" r="3.6" fill="#8B949E" />
+    <text x="510" y="216" font-size="17" font-weight="400" fill="#59636E" class="m">Records &amp; evidence</text><circle cx="494" cy="244" r="3.6" fill="#8B949E" />
     <text x="510" y="250" font-size="17" font-weight="400" fill="#59636E" class="m">Review queue</text><circle cx="494" cy="278" r="3.6" fill="#8B949E" />
     <text x="510" y="284" font-size="17" font-weight="400" fill="#59636E" class="m">WebUI · 127.0.0.1:8765</text><circle cx="494" cy="312" r="3.6" fill="#8B949E" />
     <text x="510" y="318" font-size="17" font-weight="400" fill="#59636E" class="m">Local access token</text>
 <rect x="486" y="334" width="308" height="38" rx="11" fill="#FFF1F0" />
 <text x="640" y="360" font-size="16" font-weight="600" fill="#FF4B47" text-anchor="middle" class="s">Local only · served from 127.0.0.1</text>
 
-<text x="640" y="440" font-size="19" font-weight="400" fill="#59636E" text-anchor="middle" class="s">Nothing in the middle: your memory is served from your computer.</text>
+<text x="640" y="440" font-size="19" font-weight="400" fill="#59636E" text-anchor="middle" class="s">Nothing in the middle: your records are served from your computer.</text>
 </svg>

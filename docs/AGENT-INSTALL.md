@@ -2,7 +2,7 @@
 
 You were sent here by a short prompt the person pasted into you. Read this whole file before running anything. Follow it exactly; where it is silent, choose the option that touches less of the person's computer and say what you chose.
 
-HelloOnce is the person's **personal data wallet**: a local app that keeps their originals (photos, recordings, chats, calendar…), builds sourced records from them, and serves them to the agents they approve over MCP (`my-data-wallet`). Your job is to install it, connect **yourself** as its first agent, and hand the person a browser page that walks them through the rest. The person should finish feeling "that was effortless". Keep your messages short; do the work quietly.
+HelloOnce is the person's **private database**: a local app that keeps their originals (photos, recordings, chats, calendar…) and builds sourced records from them. Every agent they approve reads it through its **HelloOnce Data Wallet** over MCP (`my-data-wallet`). Your job is to install it, connect **yourself** as its first agent, and hand the person a browser page that walks them through the rest. The person should finish feeling "that was effortless". Keep your messages short; do the work quietly.
 
 ---
 

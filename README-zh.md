@@ -87,22 +87,23 @@
 
 ## 02 · 安装
 
-HelloOnce 不绑定任何单一 Agent。它通过 **stdio MCP** 以一个服务 `my-data-wallet` 提供 13 个工具，任何支持 MCP 的客户端都能使用；安装器会替你配置好 Codex 和 Claude，其余客户端可以通过 WebUI 里需认证的本机 HTTP MCP 端点接入同一实例。
+HelloOnce 适用于任何支持 MCP 的 Agent。一个 Agent 负责安装，装好后打开的网页会把其余的都接上。
 
-把下面的提示词发给你**已经在用的那个 Agent**，在要存放数据的那台电脑上执行：
+把下面这段复制给你**已经在用的 Agent**（Claude Code、Codex、Cursor……），在要存放数据钱包的那台电脑上：
 
 ```text
-从公开发布页 https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.13 安装 HelloOnce v0.1.13。
-下载 Release 附件 `install.py` 和 `SHA256SUMS`，核对安装器的 SHA-256，
-然后运行 `python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients codex,claude --start --autostart`。
-升级前先完整备份现有数据目录。
-如果旧版 WebUI 正在运行，替换程序前先停止；保留现有数据和 Codex／Claude 的 MCP 配置。
-验证 MCP 服务能启动，并打开本机 WebUI。
-模型端点和 API 密钥让我在 WebUI 里自行填写。
-不要申请访问私有源码仓库。
+帮我在这台电脑上装好 HelloOnce：我的个人数据钱包，以后每个经我同意的 agent 都能通过 MCP 认识我。
+
+先用 curl 取下这份安装说明（不要用会做摘要的网页读取工具），完整读完再照做：
+https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/docs/AGENT-INSTALL.md
+
+大致是：按 SHA-256 校验发布包，装本机原生程序，保留已有数据，
+把你自己作为第一个 agent 接进来（用你自己的令牌），最后在浏览器里打开 HelloOnce。
+数据只留在这台电脑上；全程不读取、不打印、不上传我的任何数据和登录链接。
+页面打开后，用一句话告诉我下一步点哪里。
 ```
 
-然后**重启那个 Agent**，让它加载新的 MCP 配置。
+打开的网页首页有「开始使用」三步：**让你的 Agent 用上 HelloOnce**（列出它在这台电脑上找到的其他 Agent，点一下就接上并打开）、**加一个来源**（邮箱、日历、笔记、本机应用或手机，每个来源先整理最近三个月）、**告诉 HelloOnce 哪些名字是你**。要让数据被整理，在**设置 → 模型**里登录 HelloOnce 账号，或填你自己的模型 API。
 
 <div align="center">
 
@@ -138,7 +139,7 @@ Linux 和 Windows 的 0.1.13 安装包会在通过各自平台测试后补上。
 3. 运行安装器：
 
    ```bash
-   python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients codex,claude --start --autostart
+   python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
    ```
 
 安装器接下来会：
@@ -150,7 +151,7 @@ Linux 和 Windows 的 0.1.13 安装包会在通过各自平台测试后补上。
 
 `--start` 立即启动 WebUI；`--autostart` 可选，在下次用户登录时生效。
 
-也可以自己解压平台安装包，运行 `./openworld-memory setup --clients codex,claude --start --autostart`（Windows 程序名为 `openworld-memory.exe`）。
+也可以自己解压平台安装包，运行 `./openworld-memory setup --clients claude --start --autostart`（Windows 程序名为 `openworld-memory.exe`）。
 
 </details>
 

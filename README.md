@@ -95,24 +95,23 @@ Your wallet runs on the computer you already own: it keeps your originals, build
 
 ## 02 · Install
 
-HelloOnce is not tied to any one agent. It exposes its 13 tools over **stdio MCP** as one server, `my-data-wallet`, so any MCP-capable client can use it; the installer happens to configure Codex and Claude for you, and everything else can reach the same local instance through the authenticated HTTP MCP endpoint in the WebUI.
+HelloOnce works with any agent that speaks MCP. One agent installs it; the page it opens connects the rest.
 
-Paste this prompt into **whichever agent you already use** on the computer that will hold your memory database:
+Copy this into **the agent you already use** (Claude Code, Codex, Cursor…), on the computer that will hold your wallet:
 
 ```text
-Install HelloOnce v0.1.13 from the public release at
-https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.13.
-Download the `install.py` and `SHA256SUMS` release assets, verify the installer's SHA-256,
-then run `python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients codex,claude --start --autostart`.
-Back up the complete existing data directory before upgrading.
-If an older WebUI is running, stop it before replacing the executable;
-preserve my existing memory data and Codex/Claude MCP configurations.
-Verify that the MCP server starts and open the local WebUI.
-Let me enter any model endpoints or API keys in the WebUI.
-Do not request access to the private source repository.
+Set up HelloOnce on this computer: my personal data wallet, which any agent I approve can read over MCP.
+
+Fetch the install guide with curl (not a summarizing web reader), read all of it, then follow it exactly:
+https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/docs/AGENT-INSTALL.md
+
+In short: verify the release by SHA-256, install the native app, keep any existing data,
+connect yourself as my first agent with your own token, and open HelloOnce in my browser.
+My data stays on this machine. Never read, print or upload it, or my login link.
+When the page is open, tell me in one line what to click.
 ```
 
-Then **restart that agent** so it loads the new MCP configuration.
+The page that opens shows **Get started** on its home: **let your assistants use HelloOnce** (it lists the other agents it found here; one click connects each and opens it), **add a source** (mail, calendar, notes, this computer's apps or your phone; each starts with the last three months), and **tell HelloOnce which names are yours**. To have your data organised, sign in to a HelloOnce account or add your own model API under **Settings → Models**.
 
 <div align="center">
 
@@ -150,7 +149,7 @@ Linux and Windows packages of 0.1.13 will follow once they pass their platform t
 3. Run the installer:
 
    ```bash
-   python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients codex,claude --start --autostart
+   python3 install.py --version v0.1.13 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
    ```
 
 The installer then:
@@ -162,7 +161,7 @@ The installer then:
 
 `--start` starts the WebUI now. `--autostart` is optional and takes effect at the next user login.
 
-You can also extract a native archive yourself and run `./openworld-memory setup --clients codex,claude --start --autostart` (`openworld-memory.exe` on Windows).
+You can also extract a native archive yourself and run `./openworld-memory setup --clients claude --start --autostart` (`openworld-memory.exe` on Windows).
 
 </details>
 

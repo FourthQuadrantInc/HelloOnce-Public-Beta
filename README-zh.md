@@ -116,11 +116,11 @@ https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/d
 
 <br>
 
-- **macOS（Apple Silicon）：** macOS 14 或更高版本。**0.1.19 只提供 macOS 安装包。**
+- **macOS（Apple Silicon）：** macOS 14 或更高版本。安装包：0.1.19。
 - **Linux（x86_64）：** glibc 2.35 或更高版本（如 Ubuntu 22.04+）。最新安装包：[0.1.9][release-019]。
-- **Windows（x64）：** Windows 10/11。最新安装包：[0.1.9][release-019]（用 `py -3 install.py --version v0.1.9 --repo FourthQuadrantInc/HelloOnce-Public-Beta`）。
+- **Windows（x64）：** Windows 10/11。安装包：0.1.19（用 `py -3 install.py …`，参数相同）。
 
-Linux 和 Windows 的 0.1.19 安装包会在通过各自平台测试后补上。没有 Intel Mac 独立包。运行安装器需要 Python 3.9+；独立可执行文件自带运行环境。
+Linux 的 0.1.19 安装包会在通过平台测试后补上。没有 Intel Mac 独立包。运行安装器需要 Python 3.9+；独立可执行文件自带运行环境。
 
 <details>
 <summary><img alt="" src="assets/marker-zh.svg" height="15"> <b>手动安装</b></summary>
@@ -163,7 +163,7 @@ Linux 和 Windows 的 0.1.19 安装包会在通过各自平台测试后补上。
 ```text
 helloonce-v0.1.19-macos-arm64.tar.gz
 openworld-memory-v0.1.9-linux-x86_64.tar.gz     （0.1.19 暂未提供）
-openworld-memory-v0.1.9-windows-x86_64.zip      （0.1.19 暂未提供）
+helloonce-v0.1.19-windows-x86_64.zip
 ```
 
 </details>
@@ -429,7 +429,7 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 
 ## 09 · 更新
 
-版本 **0.1.19** 是自 0.1.13 以来的第一个公开版本（见 [03](#03--0119-有什么新内容)）。本版只提供 macOS；Linux 和 Windows 暂时停在 0.1.9，应用内更新会提示该版本没有对应安装包。
+版本 **0.1.19** 是自 0.1.13 以来的第一个公开版本（见 [03](#03--0119-有什么新内容)）。本版提供 macOS 和 Windows；Linux 暂时停在 0.1.9，应用内更新会提示该版本没有对应安装包。
 
 在 **设置 → 通用 → 软件更新** 中更新。**更新并重启**会校验安装包、备份本地数据和配置，并检查重启后的应用状态。不需要云端账号，已有连接和本地数据都会保留。详见[更新与恢复说明][updates]。
 

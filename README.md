@@ -126,11 +126,11 @@ The page that opens shows **Get started** on its home: **let your assistants use
 
 <br>
 
-- **macOS (Apple Silicon):** macOS 14 or later. **0.1.19 is available for macOS only.**
+- **macOS (Apple Silicon):** macOS 14 or later. Package: 0.1.19.
 - **Linux (x86_64):** glibc 2.35 or later (for example, Ubuntu 22.04+). Latest package: [0.1.9][release-019].
-- **Windows (x64):** Windows 10/11. Latest package: [0.1.9][release-019] (use `py -3 install.py --version v0.1.9 --repo FourthQuadrantInc/HelloOnce-Public-Beta`).
+- **Windows (x64):** Windows 10/11. Package: 0.1.19 (use `py -3 install.py …` with the same arguments).
 
-Linux and Windows packages of 0.1.19 will follow once they pass their platform tests. There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
+The Linux package of 0.1.19 will follow once it passes its platform tests. There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
 
 <details>
 <summary><img alt="" src="assets/marker-en.svg" height="15"> <b>Manual installation</b></summary>
@@ -175,7 +175,7 @@ You can also extract a native archive yourself and run `./helloonce setup --clie
 ```text
 helloonce-v0.1.19-macos-arm64.tar.gz
 openworld-memory-v0.1.9-linux-x86_64.tar.gz     (0.1.19 not yet available)
-openworld-memory-v0.1.9-windows-x86_64.zip      (0.1.19 not yet available)
+helloonce-v0.1.19-windows-x86_64.zip
 ```
 
 </details>
@@ -451,7 +451,7 @@ See the [source API contract and examples][source-api], including Windows PowerS
 
 ## 09 · Updates
 
-Version **0.1.19** is the first public release since 0.1.13 (see [03](#03--whats-new-in-0119)). It is available for macOS; Linux and Windows stay on 0.1.9 for now, and their updater reports no package for 0.1.19.
+Version **0.1.19** is the first public release since 0.1.13 (see [03](#03--whats-new-in-0119)). It is available for macOS and Windows; Linux stays on 0.1.9 for now, and its updater reports no package for 0.1.19.
 
 Update from **Settings → General → Software updates**. **Update and restart** verifies the package, backs up your data and configuration, and checks the restarted app. No cloud account is required, and existing connections and local data are kept. See the [update and recovery guide][updates].
 

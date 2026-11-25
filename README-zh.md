@@ -11,7 +11,7 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 [**安装**](#02--安装) &nbsp;·&nbsp; [Releases][releases] &nbsp;·&nbsp; [English](README.md)
 
-> **HelloOnce 0.1.19**，由 Fourth Quadrant 发布：新的首页和连接页，装好就能上手。装过 0.1.13 或更早的版本？它在**设置 → 通用**里检查不到更新，请用下面的提示词再装一次，数据会保留。
+> Fourth Quadrant 发布了 **HelloOnce 0.1.20**，提供 macOS（Apple Silicon）和 Windows（x64）公测包。已安装 0.1.19 的用户可在**设置 → 通用 → 软件更新**中检查更新。若使用 0.1.13 或更早的版本，请用下面的安装提示词升级并保留数据。
 
 <br>
 
@@ -30,7 +30,7 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/glance-zh-dark.svg">
-  <img alt="版本 0.1.19，存储在你的电脑上，本机 WebUI 界面，MCP 提供 14 个工具。" src="assets/glance-zh-light.svg" width="100%">
+  <img alt="版本 0.1.20，存储在你的电脑上，本机 WebUI 界面，MCP 提供 14 个工具。" src="assets/glance-zh-light.svg" width="100%">
 </picture>
 
 </div>
@@ -116,18 +116,18 @@ https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/d
 
 <br>
 
-- **macOS（Apple Silicon）：** macOS 14 或更高版本。安装包：0.1.19。
+- **macOS（Apple Silicon）：** macOS 14 或更高版本。安装包：0.1.20。
 - **Linux（x86_64）：** glibc 2.35 或更高版本（如 Ubuntu 22.04+）。最新安装包：[0.1.9][release-019]。
-- **Windows（x64）：** Windows 10/11。安装包：0.1.19（用 `py -3 install.py …`，参数相同）。
+- **Windows（x64）：** Windows 10/11。安装包：0.1.20（用 `py -3 install.py …`，参数相同）。
 
-Linux 的 0.1.19 安装包会在通过平台测试后补上。没有 Intel Mac 独立包。运行安装器需要 Python 3.9+；独立可执行文件自带运行环境。
+没有 Intel Mac 独立包。运行安装器需要 Python 3.9+；独立可执行文件自带运行环境。
 
 <details>
 <summary><img alt="" src="assets/marker-zh.svg" height="15"> <b>手动安装</b></summary>
 
 <br>
 
-1. 从 [v0.1.19 Release][release] 下载 `install.py` 和 `SHA256SUMS`。
+1. 从 [v0.1.20 Release][release] 下载 `install.py` 和 `SHA256SUMS`。
 2. 计算安装器的校验值，与 `SHA256SUMS` 中对应的一行比对：
 
    ```text
@@ -139,7 +139,7 @@ Linux 的 0.1.19 安装包会在通过平台测试后补上。没有 Intel Mac �
 3. 运行安装器：
 
    ```bash
-   python3 install.py --version v0.1.19 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
+   python3 install.py --version v0.1.20 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
    ```
 
 安装器接下来会：
@@ -161,9 +161,9 @@ Linux 的 0.1.19 安装包会在通过平台测试后补上。没有 Intel Mac �
 <br>
 
 ```text
-helloonce-v0.1.19-macos-arm64.tar.gz
-openworld-memory-v0.1.9-linux-x86_64.tar.gz     （0.1.19 暂未提供）
-helloonce-v0.1.19-windows-x86_64.zip
+helloonce-v0.1.20-macos-arm64.tar.gz
+openworld-memory-v0.1.9-linux-x86_64.tar.gz     （来自 v0.1.9 发布页）
+helloonce-v0.1.20-windows-x86_64.zip
 ```
 
 </details>
@@ -188,7 +188,15 @@ helloonce-v0.1.19-windows-x86_64.zip
 
 <br>
 
-## 03 · 0.1.19 有什么新内容
+## 03 · 版本说明
+
+### 0.1.20
+
+macOS 和 Windows 安装包统一使用新版本号，已安装的 0.1.19 可以检测到这次更新。两个平台沿用 0.1.19 最终公测包的应用代码。详见 [0.1.20 发布说明][notes]。
+
+<a id="03--0119-有什么新内容"></a>
+
+### 0.1.19
 
 0.1.13 之后的第一个公开版，包含 0.1.14–0.1.18 的团队预览版。
 
@@ -202,7 +210,7 @@ helloonce-v0.1.19-windows-x86_64.zip
 - **给 Agent：** 新工具 `data_changes` 告诉 Agent 上次之后什么变了；Agent 可以更正、撤回自己提交的记录，你确认之后别的 Agent 才看得到。
 - **整理从最新的开始**，旧的内容不会覆盖新的。
 
-第一次启动时数据文件换成新名字，只改名、不改内容。命令改为 `helloonce`（`openworld-memory` 仍可用）。详见 [0.1.19 发布说明][notes]。
+第一次启动时数据文件换成新名字，只改名、不改内容。命令改为 `helloonce`（`openworld-memory` 仍可用）。详见 [0.1.19 发布说明][notes-0119]。
 
 <div align="center">
 
@@ -268,7 +276,7 @@ HelloOnce 安卓 App 会把你在 App 里打开的类别送过来：通讯录、
 
 </div>
 
-1. **安装 App。** [HelloOnce 安卓版 2.0](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/helloonce-android-v2.0.0.apk)（需 Android 10 或更高版本，不需要 root）。
+1. **安装 App。** [HelloOnce 安卓版 2.0](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/helloonce-android-v2.0.0.apk)（需 Android 10 或更高版本，不需要 root）。
 2. **配对。** 在电脑上的 HelloOnce 里打开 **连接 → 个人 → 添加 → 扫码**。
 3. **扫码。** 在 App 里点 **扫码配对**，扫描二维码。
 4. **选择。** 在 App 里打开你想同步的类别，按系统提示允许访问。每一类都会存成对应的记录，HelloOnce 里手机的页面会显示哪些已经收到。录音用你的语音模型转写（登录 HelloOnce 账号即自动配好）。
@@ -429,7 +437,7 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 
 ## 09 · 更新
 
-版本 **0.1.19** 是自 0.1.13 以来的第一个公开版本（见 [03](#03--0119-有什么新内容)）。本版提供 macOS 和 Windows；Linux 暂时停在 0.1.9，应用内更新会提示该版本没有对应安装包。
+**0.1.20** 提供 macOS（Apple Silicon）和 Windows（x64）公测包。Linux 最新公测包为 [0.1.9][release-019]。
 
 在 **设置 → 通用 → 软件更新** 中更新。**更新并重启**会校验安装包、备份本地数据和配置，并检查重启后的应用状态。不需要云端账号，已有连接和本地数据都会保留。详见[更新与恢复说明][updates]。
 
@@ -463,11 +471,12 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 <sub><a href="#top">回到顶部</a> &nbsp;·&nbsp; <a href="README.md">English</a></sub>
 </div>
 
-[release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.19
+[release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.20
 [release-019]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.9
 [releases]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases
-[notes]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/0.1.19.md
-[mobile]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/MOBILE-VOICE.md
-[connectors]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/CONNECTORS.md
-[source-api]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/SOURCE-API.md
-[updates]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/UPDATES.md
+[notes]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/0.1.20.md
+[notes-0119]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/0.1.19.md
+[mobile]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/MOBILE-VOICE.md
+[connectors]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/CONNECTORS.md
+[source-api]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/SOURCE-API.md
+[updates]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/UPDATES.md

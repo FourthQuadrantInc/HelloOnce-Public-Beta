@@ -11,7 +11,7 @@ HelloOnce is your private database. The originals of your conversations, recordi
 
 [**Install**](#02--install) &nbsp;·&nbsp; [Releases][releases] &nbsp;·&nbsp; [Chinese](README-zh.md)
 
-> **HelloOnce 0.1.19**, published by Fourth Quadrant: a new home and connections page, and a first run that sets itself up. Installed 0.1.13 or earlier? It finds no updates in **Settings → General**: install once more with the prompt below. Your data is kept.
+> Fourth Quadrant publishes **HelloOnce 0.1.20** for macOS (Apple Silicon) and Windows (x64). If you have 0.1.19, open **Settings → General → Software updates**. For 0.1.13 or earlier, use the install prompt below to upgrade and keep your data.
 
 <br>
 
@@ -32,7 +32,7 @@ HelloOnce is your private database. The originals of your conversations, recordi
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/glance-en-dark.svg">
-  <img alt="Version 0.1.19, storage on your computer, a local WebUI, and MCP with 14 tools." src="assets/glance-en-light.svg" width="100%">
+  <img alt="Version 0.1.20, storage on your computer, a local WebUI, and MCP with 14 tools." src="assets/glance-en-light.svg" width="100%">
 </picture>
 
 </div>
@@ -126,18 +126,18 @@ The page that opens shows **Get started** on its home: **let your assistants use
 
 <br>
 
-- **macOS (Apple Silicon):** macOS 14 or later. Package: 0.1.19.
+- **macOS (Apple Silicon):** macOS 14 or later. Package: 0.1.20.
 - **Linux (x86_64):** glibc 2.35 or later (for example, Ubuntu 22.04+). Latest package: [0.1.9][release-019].
-- **Windows (x64):** Windows 10/11. Package: 0.1.19 (use `py -3 install.py …` with the same arguments).
+- **Windows (x64):** Windows 10/11. Package: 0.1.20 (use `py -3 install.py …` with the same arguments).
 
-The Linux package of 0.1.19 will follow once it passes its platform tests. There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
+There is no native Intel Mac package. The installer needs Python 3.9+; the native executable includes its own runtime.
 
 <details>
 <summary><img alt="" src="assets/marker-en.svg" height="15"> <b>Manual installation</b></summary>
 
 <br>
 
-1. Download `install.py` and `SHA256SUMS` from the [v0.1.19 release][release].
+1. Download `install.py` and `SHA256SUMS` from the [v0.1.20 release][release].
 2. Hash the installer and compare it with its line in `SHA256SUMS`:
 
    ```text
@@ -149,7 +149,7 @@ The Linux package of 0.1.19 will follow once it passes its platform tests. There
 3. Run the installer:
 
    ```bash
-   python3 install.py --version v0.1.19 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
+   python3 install.py --version v0.1.20 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
    ```
 
 The installer then:
@@ -173,9 +173,9 @@ You can also extract a native archive yourself and run `./helloonce setup --clie
 <br>
 
 ```text
-helloonce-v0.1.19-macos-arm64.tar.gz
-openworld-memory-v0.1.9-linux-x86_64.tar.gz     (0.1.19 not yet available)
-helloonce-v0.1.19-windows-x86_64.zip
+helloonce-v0.1.20-macos-arm64.tar.gz
+openworld-memory-v0.1.9-linux-x86_64.tar.gz     (from the v0.1.9 release)
+helloonce-v0.1.20-windows-x86_64.zip
 ```
 
 </details>
@@ -202,7 +202,15 @@ helloonce-v0.1.19-windows-x86_64.zip
 
 <br>
 
-## 03 · What's new in 0.1.19
+## 03 · Release notes
+
+### 0.1.20
+
+The macOS and Windows packages now share a new version number so installations on 0.1.19 can detect the update. The application code is the same as in the final 0.1.19 public build. See the [0.1.20 release notes][notes].
+
+<a id="03--whats-new-in-0119"></a>
+
+### 0.1.19
 
 The first public release since 0.1.13. It includes the 0.1.14–0.1.18 team previews.
 
@@ -216,7 +224,7 @@ The first public release since 0.1.13. It includes the 0.1.14–0.1.18 team prev
 - **For agents:** a new tool, `data_changes`, tells an agent what changed since it last looked. An agent can correct or withdraw what it reported; other agents see it only after you confirm.
 - **Organizing goes newest first**, and an older item can never overwrite a newer one.
 
-The data files take their new names on first start; only names change. The command is now `helloonce` (`openworld-memory` still works). See the [0.1.19 release notes][notes].
+The data files take their new names on first start; only names change. The command is now `helloonce` (`openworld-memory` still works). See the [0.1.19 release notes][notes-0119].
 
 <div align="center">
 
@@ -284,7 +292,7 @@ The HelloOnce Android app sends what you turn on in it: contacts, calendar, text
 
 <br>
 
-1. **Install the app.** [HelloOnce for Android 2.0](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/helloonce-android-v2.0.0.apk) (Android 10 or later; no root needed).
+1. **Install the app.** [HelloOnce for Android 2.0](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/helloonce-android-v2.0.0.apk) (Android 10 or later; no root needed).
 2. **Pair.** In HelloOnce on your computer, open **Connections → Personal → Add → Scan QR code**.
 3. **Scan.** Tap **Scan to pair** in the app and scan the code.
 4. **Choose.** Turn on the kinds you want in the app and allow access when asked. Each kind arrives as its own records, and your phone's page in HelloOnce shows what has arrived. Recordings are transcribed with your speech model (signing in to a HelloOnce account sets one up).
@@ -451,7 +459,7 @@ See the [source API contract and examples][source-api], including Windows PowerS
 
 ## 09 · Updates
 
-Version **0.1.19** is the first public release since 0.1.13 (see [03](#03--whats-new-in-0119)). It is available for macOS and Windows; Linux stays on 0.1.9 for now, and its updater reports no package for 0.1.19.
+Version **0.1.20** is available for macOS (Apple Silicon) and Windows (x64). The latest public Linux package is [0.1.9][release-019].
 
 Update from **Settings → General → Software updates**. **Update and restart** verifies the package, backs up your data and configuration, and checks the restarted app. No cloud account is required, and existing connections and local data are kept. See the [update and recovery guide][updates].
 
@@ -487,11 +495,12 @@ This is the public distribution repository for HelloOnce (the `helloonce` applic
 
 <br>
 
-[release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.19
+[release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.20
 [release-019]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.9
 [releases]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases
-[notes]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/0.1.19.md
-[mobile]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/MOBILE-VOICE.md
-[connectors]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/CONNECTORS.md
-[source-api]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/SOURCE-API.md
-[updates]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/UPDATES.md
+[notes]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/0.1.20.md
+[notes-0119]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/0.1.19.md
+[mobile]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/MOBILE-VOICE.md
+[connectors]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/CONNECTORS.md
+[source-api]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/SOURCE-API.md
+[updates]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.20/UPDATES.md

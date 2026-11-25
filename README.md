@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="HelloOnce Open your world to your agent." src="assets/hero-light.svg" width="100%">
+  <img alt="helloOnce. Say hello once. Every agent knows you." src="assets/hero-light.svg" width="100%">
 </picture>
 
 ### Say hello once. Every agent knows you.
@@ -17,7 +17,7 @@ HelloOnce is your private database. The originals of your conversations, recordi
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-en-dark.svg">
-  <img alt="Files, phone recordings, Notion and the source API flow into HelloOnce on your computer, which serves Codex, Code Claude and Claude Desktop over MCP." src="assets/architecture-en-light.svg" width="100%">
+  <img alt="Files, phone recordings, Notion and the source API flow into HelloOnce on your computer, which serves Codex, Claude Code and Claude Desktop over MCP." src="assets/architecture-en-light.svg" width="100%">
 </picture>
 
 <sub>Four kinds of input, one local store, and any agent that speaks MCP.</sub>

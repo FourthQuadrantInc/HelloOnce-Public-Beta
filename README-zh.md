@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-zh-dark.svg">
-  <img alt="HelloOnce 把你的世界交给你的 Agent。" src="assets/hero-zh-light.svg" width="100%">
+  <img alt="helloOnce。打一次招呼，每个 Agent 都认识你。" src="assets/hero-zh-light.svg" width="100%">
 </picture>
 
 ### 打一次招呼，每个 Agent 都认识你。

@@ -197,6 +197,7 @@ openworld-memory-v0.1.9-windows-x86_64.zip      （0.1.19 暂未提供）
 - **登录就配好模型。** 登录 HelloOnce 账号即可用对话、看图、语音和向量模型，不用填地址和 key；也可以按模型填自己的端点。
 - **本机加密。** 数据在你的电脑上加密保存，其他程序不能直接从磁盘读取。
 - **平台官方连接。** Notion、GitHub、Linear、Todoist、滴答清单和 Raindrop 在平台自己的页面登录，直接读到你的电脑上。
+- **安卓手机，不用 root。** 安卓 App 2.0 扫码配对，通讯录、日历、短信、通话、照片、录音、通知、到访地点、应用使用时间和 Health Connect，打开哪类就同步哪类。
 - **这台电脑是一个连接。** 照片、语音备忘录、信息、日历、提醒事项、备忘录、通话和浏览记录（Safari、Chrome、Edge）各有开关。
 - **给 Agent：** 新工具 `data_changes` 告诉 Agent 上次之后什么变了；Agent 可以更正、撤回自己提交的记录，你确认之后别的 Agent 才看得到。
 - **整理从最新的开始**，旧的内容不会覆盖新的。
@@ -252,9 +253,9 @@ MCP 服务会向客户端 Agent 说明以下规则：
 
 <br>
 
-## 05 · 手机录音
+## 05 · 你的手机
 
-HelloOnce 自己接收手机录音，不需要另外运行接收程序。
+HelloOnce 安卓 App 会把你在 App 里打开的类别送过来：通讯录、日历、短信、通话记录、照片和视频、录音、一个文件夹、通知、到访地点、应用使用时间和 Health Connect。全部在手机上加密，HelloOnce 自己接收，不需要另外运行接收程序。
 
 <div align="center">
 
@@ -267,10 +268,10 @@ HelloOnce 自己接收手机录音，不需要另外运行接收程序。
 
 </div>
 
-1. **安装 App。** 安装 HelloOnce 安卓 App（[Android 演示包](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/helloonce-android-v1.0.1-demo.apk)；需 Android 10 或更高版本）。
-2. **配对。** 在本机 WebUI 打开 **设置 → 手机录音**，点 **一键配对**。无需任何配置：HelloOnce 内置默认中转和它的证书，会开通通道并显示二维码。终端里也可以运行 `helloonce mobile pair`。
+1. **安装 App。** [HelloOnce 安卓版 2.0](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/helloonce-android-v2.0.0.apk)（需 Android 10 或更高版本，不需要 root）。
+2. **配对。** 在电脑上的 HelloOnce 里打开 **连接 → 个人 → 添加 → 扫码**。
 3. **扫码。** 在 App 里点 **扫码配对**，扫描二维码。
-4. **录音。** 用手机自带的录音机录音即可。新录音会被转写，连同原件保存为记录。
+4. **选择。** 在 App 里打开你想同步的类别，按系统提示允许访问。每一类都会存成对应的记录，HelloOnce 里手机的页面会显示哪些已经收到。录音用你的语音模型转写（登录 HelloOnce 账号即自动配好）。
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/badge-warning-zh-dark.svg">
@@ -279,7 +280,7 @@ HelloOnce 自己接收手机录音，不需要另外运行接收程序。
 
 配对二维码包含私钥，请勿截图或分享。它会在三分钟后自动隐藏。
 
-**转写。** 如果还没有配置语音模型，一键配对会同时启用默认中转背后的公共语音服务：FireRed，用「说话人 A／说话人 B」这样的标签区分，且从不使用任何人的声纹。录音在你的电脑上解密，音频经中转发送到该服务转写，两边都不保存。
+**旧的 1.x 版（只传录音）。** 它改在 **设置 → 手机录音 → 一键配对** 里配对。如果还没有配置语音模型，一键配对会同时启用默认中转背后的公共语音服务：FireRed，用「说话人 A／说话人 B」这样的标签区分，且从不使用任何人的声纹。录音在你的电脑上解密，音频经中转发送到该服务转写，两边都不保存。
 
 想让音频留在自己的设施内，就在 **设置 → 模型端点** 配置自己的语音模型。一键配对不会覆盖你已经配置好的模型。
 

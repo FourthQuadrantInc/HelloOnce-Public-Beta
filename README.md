@@ -211,6 +211,7 @@ The first public release since 0.1.13. It includes the 0.1.14–0.1.18 team prev
 - **Sign in and the models are set up.** A HelloOnce account sets up chat, pictures, speech and embeddings: no endpoint, no key. Your own endpoints still work, per model.
 - **Encrypted on your computer.** Your data is encrypted at rest, so other programs cannot read it straight from disk.
 - **Official platform connections.** Notion, GitHub, Linear, Todoist, TickTick and Raindrop sign in on the platform's own page and read straight into your computer.
+- **Your Android phone, no root.** The Android app 2.0 pairs by QR code and sends contacts, calendar, messages, calls, photos, recordings, notifications, places, app usage and Health Connect: whichever you turn on.
 - **This computer as one connection.** Photos, voice memos, messages, calendar, reminders, notes, calls and browsing history (Safari, Chrome and Edge) each have their own switch.
 - **For agents:** a new tool, `data_changes`, tells an agent what changed since it last looked. An agent can correct or withdraw what it reported; other agents see it only after you confirm.
 - **Organizing goes newest first**, and an older item can never overwrite a newer one.
@@ -266,9 +267,9 @@ Tool use ultimately depends on the client model, so these are server instruction
 
 <br>
 
-## 05 · Phone recordings
+## 05 · Your phone
 
-HelloOnce receives phone recordings itself; no separate receiver program is needed.
+The HelloOnce Android app sends what you turn on in it: contacts, calendar, text messages, call log, photos and videos, voice recordings, a folder, notifications, places, app usage and Health Connect. Everything is encrypted on the phone; HelloOnce receives it itself, with no separate receiver program.
 
 <div align="center">
 
@@ -283,10 +284,10 @@ HelloOnce receives phone recordings itself; no separate receiver program is need
 
 <br>
 
-1. **Install the app.** Install the HelloOnce Android app ([Android demo APK](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/helloonce-android-v1.0.1-demo.apk); Android 10 or later).
-2. **Pair.** In the local WebUI, open **Settings → Phone recordings** and click **One-click pairing**. Nothing needs to be configured: HelloOnce has a built-in default relay and its certificate, opens a channel and shows a QR code. From a terminal, run `helloonce mobile pair`.
-3. **Scan.** Tap **Scan to pair** in the app and scan the QR code.
-4. **Record.** Use the phone's normal recorder. New recordings are transcribed and saved as records with their original.
+1. **Install the app.** [HelloOnce for Android 2.0](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.19/helloonce-android-v2.0.0.apk) (Android 10 or later; no root needed).
+2. **Pair.** In HelloOnce on your computer, open **Connections → Personal → Add → Scan QR code**.
+3. **Scan.** Tap **Scan to pair** in the app and scan the code.
+4. **Choose.** Turn on the kinds you want in the app and allow access when asked. Each kind arrives as its own records, and your phone's page in HelloOnce shows what has arrived. Recordings are transcribed with your speech model (signing in to a HelloOnce account sets one up).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/badge-warning-dark.svg">
@@ -295,7 +296,7 @@ HelloOnce receives phone recordings itself; no separate receiver program is need
 
 The pairing QR code contains private keys. Do not screenshot or share it. It hides itself after three minutes.
 
-**Transcription.** If no speech model is configured yet, one-click pairing also enables the public speech service behind the default relay: FireRed, with speaker labels such as Person A / Person B, and it never uses anyone's voiceprint. Each recording is decrypted on your computer and its audio is sent through the relay to that service for transcription; neither stores it. To keep audio on your own infrastructure, configure your own speech model under **Settings → Model endpoints**.
+**Older 1.x app (recordings only).** It pairs under **Settings → Phone recordings → One-click pairing** instead. If no speech model is configured yet, one-click pairing also enables the public speech service behind the default relay: FireRed, with speaker labels such as Person A / Person B, and it never uses anyone's voiceprint. Each recording is decrypted on your computer and its audio is sent through the relay to that service for transcription; neither stores it. To keep audio on your own infrastructure, configure your own speech model under **Settings → Model endpoints**.
 
 One-click pairing never replaces a model you configured.
 

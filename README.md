@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="helloOnce. Say hello once. Every agent knows you." src="assets/hero-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/opening-dark.webp">
+  <img alt="helloOnce: the little h drops in, waves hello and throws out its name." src="assets/opening-light.webp" width="100%">
 </picture>
 
 ### Say hello once. Every agent knows you.

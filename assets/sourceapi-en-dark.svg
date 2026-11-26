@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 266" width="1280" height="266" role="img" aria-label="Source API: register a source with the WebUI admin token, then submit events with a per-source write-only token.">
 <defs>
   <radialGradient id="halo" cx="50%" cy="50%" r="50%">
-    <stop offset="0" stop-color="#A3A8A4" stop-opacity=".55"/>
-    <stop offset=".45" stop-color="#A3A8A4" stop-opacity=".18"/>
-    <stop offset="1" stop-color="#A3A8A4" stop-opacity="0"/>
+    <stop offset="0" stop-color="#A7A7A7" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#A7A7A7" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
   </radialGradient>
   <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#282D2F"/>
-    <stop offset="1" stop-color="#1A1E20"/>
+    <stop offset="0" stop-color="#2C2C2C"/>
+    <stop offset="1" stop-color="#1D1D1D"/>
   </linearGradient>
   <linearGradient id="cardAltGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#343A3B"/>
-    <stop offset="1" stop-color="#232829"/>
+    <stop offset="0" stop-color="#393939"/>
+    <stop offset="1" stop-color="#272727"/>
   </linearGradient>
   <filter id="soft" x="-30%" y="-30%" width="160%" height="180%">
     <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(0,0,0,.62)" flood-opacity="1"/>
@@ -54,20 +54,20 @@
   }@keyframes swp{0%{transform:translateX(0);opacity:0}18%{opacity:1}82%{opacity:1}100%{transform:translateX(480px);opacity:0}}</style>
 
 <rect width="1280" height="266" fill="#0D1117"/>
-<g filter="url(#softSm)"><rect x="40" y="40" width="588" height="182" rx="20" fill="url(#cardGrad)" stroke="#3A403F" stroke-width="1"/></g>
-<text x="66" y="84" font-size="21" font-weight="600" fill="#E3E0D8" class="s">Register a source</text>
-<rect x="66" y="100" width="62" height="26" rx="7" fill="#E3E0D8" />
-<text x="97" y="118" font-size="13" font-weight="700" fill="#15191B" text-anchor="middle" class="m">POST</text>
-<rect x="138" y="100" width="126.8" height="26" rx="7" fill="#141718" />
-<text x="150" y="118" font-size="14" font-weight="400" fill="#CFCDC6" class="m">/api/sources</text>
-<text x="66" y="164" font-size="13" font-weight="700" fill="#7C8481" letter-spacing="1.4" class="s">TOKEN</text>
-<text x="66" y="192" font-size="17" font-weight="500" fill="#A3A8A4" class="s">WebUI admin token</text><g filter="url(#softSm)"><rect x="652" y="40" width="588" height="182" rx="20" fill="url(#cardGrad)" stroke="#3A403F" stroke-width="1"/></g>
-<text x="678" y="84" font-size="21" font-weight="600" fill="#E3E0D8" class="s">Submit events</text>
-<rect x="678" y="100" width="62" height="26" rx="7" fill="#E3E0D8" />
-<text x="709" y="118" font-size="13" font-weight="700" fill="#15191B" text-anchor="middle" class="m">POST</text>
-<rect x="750" y="100" width="286.4" height="26" rx="7" fill="#141718" />
-<text x="762" y="118" font-size="14" font-weight="400" fill="#CFCDC6" class="m">/api/sources/{source_id}/events</text>
-<text x="678" y="164" font-size="13" font-weight="700" fill="#7C8481" letter-spacing="1.4" class="s">TOKEN</text>
-<text x="678" y="192" font-size="17" font-weight="500" fill="#A3A8A4" class="s">Source token</text>
-<text x="640" y="252" font-size="18" font-weight="400" fill="#7C8481" text-anchor="middle" class="s">Rotation and revocation endpoints are also provided.</text>
+<g filter="url(#softSm)"><rect x="40" y="40" width="588" height="182" rx="20" fill="url(#cardGrad)" stroke="#3F3F3F" stroke-width="1"/></g>
+<text x="66" y="84" font-size="21" font-weight="600" fill="#E0E0E0" class="s">Register a source</text>
+<rect x="66" y="100" width="62" height="26" rx="7" fill="#E0E0E0" />
+<text x="97" y="118" font-size="13" font-weight="700" fill="#181818" text-anchor="middle" class="m">POST</text>
+<rect x="138" y="100" width="126.8" height="26" rx="7" fill="#161616" />
+<text x="150" y="118" font-size="14" font-weight="400" fill="#CDCDCD" class="m">/api/sources</text>
+<text x="66" y="164" font-size="13" font-weight="700" fill="#828282" letter-spacing="1.4" class="s">TOKEN</text>
+<text x="66" y="192" font-size="17" font-weight="500" fill="#A7A7A7" class="s">WebUI admin token</text><g filter="url(#softSm)"><rect x="652" y="40" width="588" height="182" rx="20" fill="url(#cardGrad)" stroke="#3F3F3F" stroke-width="1"/></g>
+<text x="678" y="84" font-size="21" font-weight="600" fill="#E0E0E0" class="s">Submit events</text>
+<rect x="678" y="100" width="62" height="26" rx="7" fill="#E0E0E0" />
+<text x="709" y="118" font-size="13" font-weight="700" fill="#181818" text-anchor="middle" class="m">POST</text>
+<rect x="750" y="100" width="286.4" height="26" rx="7" fill="#161616" />
+<text x="762" y="118" font-size="14" font-weight="400" fill="#CDCDCD" class="m">/api/sources/{source_id}/events</text>
+<text x="678" y="164" font-size="13" font-weight="700" fill="#828282" letter-spacing="1.4" class="s">TOKEN</text>
+<text x="678" y="192" font-size="17" font-weight="500" fill="#A7A7A7" class="s">Source token</text>
+<text x="640" y="252" font-size="18" font-weight="400" fill="#828282" text-anchor="middle" class="s">Rotation and revocation endpoints are also provided.</text>
 </svg>

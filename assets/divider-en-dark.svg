@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="1280" height="100" role="img" aria-label="">
 <defs>
   <radialGradient id="halo" cx="50%" cy="50%" r="50%">
-    <stop offset="0" stop-color="#A3A8A4" stop-opacity=".55"/>
-    <stop offset=".45" stop-color="#A3A8A4" stop-opacity=".18"/>
-    <stop offset="1" stop-color="#A3A8A4" stop-opacity="0"/>
+    <stop offset="0" stop-color="#A7A7A7" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#A7A7A7" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
   </radialGradient>
   <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#282D2F"/>
-    <stop offset="1" stop-color="#1A1E20"/>
+    <stop offset="0" stop-color="#2C2C2C"/>
+    <stop offset="1" stop-color="#1D1D1D"/>
   </linearGradient>
   <linearGradient id="cardAltGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#343A3B"/>
-    <stop offset="1" stop-color="#232829"/>
+    <stop offset="0" stop-color="#393939"/>
+    <stop offset="1" stop-color="#272727"/>
   </linearGradient>
   <filter id="soft" x="-30%" y="-30%" width="160%" height="180%">
     <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(0,0,0,.62)" flood-opacity="1"/>
@@ -54,11 +54,11 @@
   }</style>
 
 <rect width="1280" height="100" fill="#0D1117"/>
-<line x1="300" y1="50" x2="604" y2="50" stroke="#7C8481" stroke-width="1.2"/>
-<line x1="676" y1="50" x2="980" y2="50" stroke="#7C8481" stroke-width="1.2"/>
-<line x1="604" y1="50" x2="676" y2="50" stroke="#3A403F" stroke-width="1.2" stroke-dasharray="2 8" class="march"/>
-<circle cx="640" cy="50" r="20" fill="none" stroke="#E3E0D8" stroke-width="1.4" class="snr" style="animation-delay:0s;animation-duration:4.6s"/>
-<circle cx="618" cy="50" r="3.8" fill="#6F7672" class="dp" style="animation-delay:-.0s"/>
-<circle cx="640" cy="50" r="5.6" fill="#E3E0D8" class="dp" style="animation-delay:-.5s"/>
-<circle cx="662" cy="50" r="3.8" fill="#6F7672" class="dp" style="animation-delay:-1.0s"/>
+<line x1="300" y1="50" x2="604" y2="50" stroke="#828282" stroke-width="1.2"/>
+<line x1="676" y1="50" x2="980" y2="50" stroke="#828282" stroke-width="1.2"/>
+<line x1="604" y1="50" x2="676" y2="50" stroke="#3F3F3F" stroke-width="1.2" stroke-dasharray="2 8" class="march"/>
+<circle cx="640" cy="50" r="20" fill="none" stroke="#E0E0E0" stroke-width="1.4" class="snr" style="animation-delay:0s;animation-duration:4.6s"/>
+<circle cx="618" cy="50" r="3.8" fill="#747474" class="dp" style="animation-delay:-.0s"/>
+<circle cx="640" cy="50" r="5.6" fill="#E0E0E0" class="dp" style="animation-delay:-.5s"/>
+<circle cx="662" cy="50" r="3.8" fill="#747474" class="dp" style="animation-delay:-1.0s"/>
 </svg>

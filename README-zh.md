@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-zh-dark.svg">
-  <img alt="helloOnce。打一次招呼，每个 Agent 都认识你。" src="assets/hero-zh-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/opening-dark.webp">
+  <img alt="helloOnce：小 h 落下来，挥手打招呼，把自己的名字甩了出来。" src="assets/opening-light.webp" width="100%">
 </picture>
 
 ### 打一次招呼，每个 Agent 都认识你。

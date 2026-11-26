@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 308" width="1280" height="308" role="img" aria-label="适用于 macOS Apple Silicon、Linux x86_64 和 Windows x64 的独立安装包及其系统要求。">
 <defs>
   <radialGradient id="halo" cx="50%" cy="50%" r="50%">
-    <stop offset="0" stop-color="#A7A7A7" stop-opacity=".55"/>
-    <stop offset=".45" stop-color="#A7A7A7" stop-opacity=".18"/>
-    <stop offset="1" stop-color="#A7A7A7" stop-opacity="0"/>
+    <stop offset="0" stop-color="#A3A5A7" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#A3A5A7" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#A3A5A7" stop-opacity="0"/>
   </radialGradient>
   <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#2C2C2C"/>
-    <stop offset="1" stop-color="#1D1D1D"/>
+    <stop offset="0" stop-color="#292C32"/>
+    <stop offset="1" stop-color="#1C1F25"/>
   </linearGradient>
   <linearGradient id="cardAltGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#393939"/>
-    <stop offset="1" stop-color="#272727"/>
+    <stop offset="0" stop-color="#31353A"/>
+    <stop offset="1" stop-color="#22252B"/>
   </linearGradient>
   <filter id="soft" x="-30%" y="-30%" width="160%" height="180%">
-    <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(0,0,0,.62)" flood-opacity="1"/>
+    <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(1,4,9,.5)" flood-opacity="1"/>
   </filter>
   <filter id="softSm" x="-30%" y="-30%" width="160%" height="180%">
-    <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="rgba(0,0,0,.62)" flood-opacity=".8"/>
+    <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="rgba(1,4,9,.5)" flood-opacity=".8"/>
   </filter></defs>
 <style>
   .s{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI Variable Display', 'Segoe UI', 'Helvetica Neue', Arial, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', sans-serif}
@@ -54,33 +54,33 @@
   }@keyframes swp{0%{transform:translateX(0);opacity:0}18%{opacity:1}82%{opacity:1}100%{transform:translateX(287.33px);opacity:0}}</style>
 
 <rect width="1280" height="308" fill="#0D1117"/>
-<g filter="url(#softSm)"><rect x="40" y="44" width="385.33" height="212" rx="20" fill="url(#cardGrad)" stroke="#3F3F3F" stroke-width="1"/></g>
-<g transform="translate(75 84)" opacity=".9"><g fill="none" stroke="#A7A7A7" stroke-width="1.7" stroke-linecap="round">
+<g filter="url(#softSm)"><rect x="40" y="44" width="385.33" height="212" rx="20" fill="url(#cardGrad)" stroke="#35383D" stroke-width="1"/></g>
+<g transform="translate(75 84)" opacity=".9"><g fill="none" stroke="#A3A5A7" stroke-width="1.7" stroke-linecap="round">
     <rect x="-10.08" y="-7.92" width="20.16" height="15.84" rx="2.4000000000000004"/>
     <path d="M-10.08 -2.16 h20.16"/></g></g>
-<text x="92" y="94" font-size="21" font-weight="600" fill="#E0E0E0" class="s">macOS</text>
-<text x="92" y="120" font-size="16" font-weight="400" fill="#828282" class="s">Apple Silicon</text>
-<rect x="64" y="138" width="337.33" height="46" rx="10" fill="#161616" />
-<text x="78" y="158" font-size="14" font-weight="400" fill="#CDCDCD" class="m">helloonce-v0.1.20-</text><text x="78" y="176" font-size="14" font-weight="400" fill="#CDCDCD" class="m">macos-arm64.tar.gz</text>
-<text x="64" y="208" font-size="16" font-weight="400" fill="#A7A7A7" class="s">系统要求</text>
-<text x="64" y="230" font-size="16" font-weight="400" fill="#A7A7A7" class="s">macOS 14 或更高版本</text><g filter="url(#softSm)"><rect x="447.33" y="44" width="385.33" height="212" rx="20" fill="url(#cardGrad)" stroke="#3F3F3F" stroke-width="1"/></g>
-<g transform="translate(482.3333333333333 84)" opacity=".9"><g fill="none" stroke="#A7A7A7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+<text x="92" y="94" font-size="21" font-weight="600" fill="#E7E7E8" class="s">macOS</text>
+<text x="92" y="120" font-size="16" font-weight="400" fill="#7A7C7F" class="s">Apple Silicon</text>
+<rect x="64" y="138" width="337.33" height="46" rx="10" fill="#14181E" />
+<text x="78" y="158" font-size="14" font-weight="400" fill="#CACBCC" class="m">helloonce-v0.1.20-</text><text x="78" y="176" font-size="14" font-weight="400" fill="#CACBCC" class="m">macos-arm64.tar.gz</text>
+<text x="64" y="208" font-size="16" font-weight="400" fill="#A3A5A7" class="s">系统要求</text>
+<text x="64" y="230" font-size="16" font-weight="400" fill="#A3A5A7" class="s">macOS 14 或更高版本</text><g filter="url(#softSm)"><rect x="447.33" y="44" width="385.33" height="212" rx="20" fill="url(#cardGrad)" stroke="#35383D" stroke-width="1"/></g>
+<g transform="translate(482.3333333333333 84)" opacity=".9"><g fill="none" stroke="#A3A5A7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-7.199999999999999 -5.28 l5.04 5.28 l-5.04 5.28"/>
     <path d="M0.96 5.76 h6.24"/></g></g>
-<text x="499.33" y="94" font-size="21" font-weight="600" fill="#E0E0E0" class="s">Linux</text>
-<text x="499.33" y="120" font-size="16" font-weight="400" fill="#828282" class="s">x86_64</text>
-<rect x="471.33" y="138" width="337.33" height="46" rx="10" fill="#161616" />
-<text x="485.33" y="158" font-size="14" font-weight="400" fill="#CDCDCD" class="m">openworld-memory-v0.1.9-</text><text x="485.33" y="176" font-size="14" font-weight="400" fill="#CDCDCD" class="m">linux-x86_64.tar.gz</text>
-<text x="471.33" y="208" font-size="16" font-weight="400" fill="#A7A7A7" class="s">系统要求</text>
-<text x="471.33" y="230" font-size="16" font-weight="400" fill="#A7A7A7" class="s">glibc 2.35 或更高（如 Ubuntu 22.04+）</text><g filter="url(#softSm)"><rect x="854.67" y="44" width="385.33" height="212" rx="20" fill="url(#cardGrad)" stroke="#3F3F3F" stroke-width="1"/></g>
-<g transform="translate(889.6666666666666 84)" opacity=".9"><g fill="none" stroke="#A7A7A7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<text x="499.33" y="94" font-size="21" font-weight="600" fill="#E7E7E8" class="s">Linux</text>
+<text x="499.33" y="120" font-size="16" font-weight="400" fill="#7A7C7F" class="s">x86_64</text>
+<rect x="471.33" y="138" width="337.33" height="46" rx="10" fill="#14181E" />
+<text x="485.33" y="158" font-size="14" font-weight="400" fill="#CACBCC" class="m">openworld-memory-v0.1.9-</text><text x="485.33" y="176" font-size="14" font-weight="400" fill="#CACBCC" class="m">linux-x86_64.tar.gz</text>
+<text x="471.33" y="208" font-size="16" font-weight="400" fill="#A3A5A7" class="s">系统要求</text>
+<text x="471.33" y="230" font-size="16" font-weight="400" fill="#A3A5A7" class="s">glibc 2.35 或更高（如 Ubuntu 22.04+）</text><g filter="url(#softSm)"><rect x="854.67" y="44" width="385.33" height="212" rx="20" fill="url(#cardGrad)" stroke="#35383D" stroke-width="1"/></g>
+<g transform="translate(889.6666666666666 84)" opacity=".9"><g fill="none" stroke="#A3A5A7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-8.64 -11.52 h11.52 l6.24 6.24 v16.799999999999997 h-17.759999999999998 z"/>
     <path d="M-3.12 -2.88 h7.199999999999999 M-3.12 1.92 h7.199999999999999"/></g></g>
-<text x="906.67" y="94" font-size="21" font-weight="600" fill="#E0E0E0" class="s">Windows</text>
-<text x="906.67" y="120" font-size="16" font-weight="400" fill="#828282" class="s">x64</text>
-<rect x="878.67" y="138" width="337.33" height="46" rx="10" fill="#161616" />
-<text x="892.67" y="158" font-size="14" font-weight="400" fill="#CDCDCD" class="m">helloonce-v0.1.20-</text><text x="892.67" y="176" font-size="14" font-weight="400" fill="#CDCDCD" class="m">windows-x86_64.zip</text>
-<text x="878.67" y="208" font-size="16" font-weight="400" fill="#A7A7A7" class="s">系统要求</text>
-<text x="878.67" y="230" font-size="16" font-weight="400" fill="#A7A7A7" class="s">Windows 10/11</text>
-<text x="640" y="296" font-size="17" font-weight="400" fill="#828282" text-anchor="middle" class="s">安装器需要 Python 3.9+；独立可执行文件自带运行环境。</text>
+<text x="906.67" y="94" font-size="21" font-weight="600" fill="#E7E7E8" class="s">Windows</text>
+<text x="906.67" y="120" font-size="16" font-weight="400" fill="#7A7C7F" class="s">x64</text>
+<rect x="878.67" y="138" width="337.33" height="46" rx="10" fill="#14181E" />
+<text x="892.67" y="158" font-size="14" font-weight="400" fill="#CACBCC" class="m">helloonce-v0.1.20-</text><text x="892.67" y="176" font-size="14" font-weight="400" fill="#CACBCC" class="m">windows-x86_64.zip</text>
+<text x="878.67" y="208" font-size="16" font-weight="400" fill="#A3A5A7" class="s">系统要求</text>
+<text x="878.67" y="230" font-size="16" font-weight="400" fill="#A3A5A7" class="s">Windows 10/11</text>
+<text x="640" y="296" font-size="17" font-weight="400" fill="#7A7C7F" text-anchor="middle" class="s">安装器需要 Python 3.9+；独立可执行文件自带运行环境。</text>
 </svg>

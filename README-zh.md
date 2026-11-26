@@ -1,9 +1,7 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/opening-dark.webp">
-  <img alt="helloOnce：小 h 落下来，挥手打招呼，把自己的名字甩了出来。" src="assets/opening-light.webp" width="100%">
-</picture>
+<img alt="helloOnce：小 h 落下来，挥手打招呼，把自己的名字甩了出来。" src="assets/opening-light.webp#gh-light-mode-only" width="100%">
+<img alt="helloOnce：小 h 落下来，挥手打招呼，把自己的名字甩了出来。" src="assets/opening-dark.webp#gh-dark-mode-only" width="100%">
 
 ### 打一次招呼，每个 Agent 都认识你。
 
@@ -15,10 +13,8 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-zh-dark.svg">
-  <img alt="文件、手机录音、Notion 与信息源 API 汇入你电脑上的 HelloOnce，再通过 MCP 提供给 Codex、Claude Code 和 Claude Desktop。" src="assets/architecture-zh-light.svg" width="100%">
-</picture>
+<img alt="文件、手机录音、Notion 与信息源 API 汇入你电脑上的 HelloOnce，再通过 MCP 提供给 Codex、Claude Code 和 Claude Desktop。" src="assets/architecture-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="文件、手机录音、Notion 与信息源 API 汇入你电脑上的 HelloOnce，再通过 MCP 提供给 Codex、Claude Code 和 Claude Desktop。" src="assets/architecture-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>四种输入，一份本地存储，以及任何会说 MCP 的 Agent。</sub>
 
@@ -28,10 +24,8 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/glance-zh-dark.svg">
-  <img alt="版本 0.1.20，存储在你的电脑上，本机 WebUI 界面，MCP 提供 14 个工具。" src="assets/glance-zh-light.svg" width="100%">
-</picture>
+<img alt="版本 0.1.20，存储在你的电脑上，本机 WebUI 界面，MCP 提供 14 个工具。" src="assets/glance-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="版本 0.1.20，存储在你的电脑上，本机 WebUI 界面，MCP 提供 14 个工具。" src="assets/glance-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -39,10 +33,8 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -54,10 +46,8 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-zh-dark.svg">
-  <img alt="六项能力：本机私有数据库、文件与证据、为任意 Agent 提供 MCP、手机录音、Notion 同步、可配置模型。" src="assets/capabilities-zh-light.svg" width="100%">
-</picture>
+<img alt="六项能力：本机私有数据库、文件与证据、为任意 Agent 提供 MCP、手机录音、Notion 同步、可配置模型。" src="assets/capabilities-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="六项能力：本机私有数据库、文件与证据、为任意 Agent 提供 MCP、手机录音、Notion 同步、可配置模型。" src="assets/capabilities-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -65,10 +55,8 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/lifecycle-zh-dark.svg">
-  <img alt="告诉 Codex 的一条事实作为一条待审核的记录存进私有数据库，之后 Claude Code 可以直接答出，用户无需重复解释。" src="assets/lifecycle-zh-light.svg" width="100%">
-</picture>
+<img alt="告诉 Codex 的一条事实作为一条待审核的记录存进私有数据库，之后 Claude Code 可以直接答出，用户无需重复解释。" src="assets/lifecycle-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="告诉 Codex 的一条事实作为一条待审核的记录存进私有数据库，之后 Claude Code 可以直接答出，用户无需重复解释。" src="assets/lifecycle-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>说一次。下一个 Agent 已经知道。</sub>
 
@@ -76,10 +64,8 @@ HelloOnce 是你的私有数据库。聊天、录音、照片、邮件和日历�
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -107,10 +93,8 @@ https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/d
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/platforms-zh-dark.svg">
-  <img alt="适用于 macOS Apple Silicon、Linux x86_64 和 Windows x64 的独立安装包及其系统要求。" src="assets/platforms-zh-light.svg" width="100%">
-</picture>
+<img alt="适用于 macOS Apple Silicon、Linux x86_64 和 Windows x64 的独立安装包及其系统要求。" src="assets/platforms-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="适用于 macOS Apple Silicon、Linux x86_64 和 Windows x64 的独立安装包及其系统要求。" src="assets/platforms-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -179,10 +163,8 @@ helloonce-v0.1.20-windows-x86_64.zip
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -214,10 +196,8 @@ macOS 和 Windows 安装包统一使用新版本号，已安装的 0.1.19 可以
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -252,10 +232,8 @@ MCP 服务会向客户端 Agent 说明以下规则：
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -267,10 +245,8 @@ HelloOnce 安卓 App 会把你在 App 里打开的类别送过来：通讯录、
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/phone-zh-dark.svg">
-  <img alt="手机录音流程：在手机上录制并加密，经中转只传密文，在你的电脑上解密并转写，最后保存为待审核的记录。" src="assets/phone-zh-light.svg" width="100%">
-</picture>
+<img alt="手机录音流程：在手机上录制并加密，经中转只传密文，在你的电脑上解密并转写，最后保存为待审核的记录。" src="assets/phone-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="手机录音流程：在手机上录制并加密，经中转只传密文，在你的电脑上解密并转写，最后保存为待审核的记录。" src="assets/phone-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>密钥从不离开手机，所以中转手上没有任何可读内容。</sub>
 
@@ -281,10 +257,8 @@ HelloOnce 安卓 App 会把你在 App 里打开的类别送过来：通讯录、
 3. **扫码。** 在 App 里点 **扫码配对**，扫描二维码。
 4. **选择。** 在 App 里打开你想同步的类别，按系统提示允许访问。每一类都会存成对应的记录，HelloOnce 里手机的页面会显示哪些已经收到。录音用你的语音模型转写（登录 HelloOnce 账号即自动配好）。
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/badge-warning-zh-dark.svg">
-  <img alt="警告" src="assets/badge-warning-zh-light.svg" height="30">
-</picture>
+<img alt="警告" src="assets/badge-warning-zh-light.svg#gh-light-mode-only" height="30">
+<img alt="警告" src="assets/badge-warning-zh-dark.svg#gh-dark-mode-only" height="30">
 
 配对二维码包含私钥，请勿截图或分享。它会在三分钟后自动隐藏。
 
@@ -314,10 +288,8 @@ HelloOnce 安卓 App 会把你在 App 里打开的类别送过来：通讯录、
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -342,10 +314,8 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -355,10 +325,8 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/boundary-zh-dark.svg">
-  <img alt="数据边界图：私有数据库与证据留在你的电脑上；中转只经手密文；模型处理只发往你配置的端点。" src="assets/boundary-zh-light.svg" width="100%">
-</picture>
+<img alt="数据边界图：私有数据库与证据留在你的电脑上；中转只经手密文；模型处理只发往你配置的端点。" src="assets/boundary-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="数据边界图：私有数据库与证据留在你的电脑上；中转只经手密文；模型处理只发往你配置的端点。" src="assets/boundary-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>三个区域，三种不同的信任级别。</sub>
 
@@ -372,10 +340,8 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -387,10 +353,8 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sourceapi-zh-dark.svg">
-  <img alt="信息源 API：用 WebUI 管理令牌注册来源，再用每个来源独立的只写令牌提交事件。" src="assets/sourceapi-zh-light.svg" width="100%">
-</picture>
+<img alt="信息源 API：用 WebUI 管理令牌注册来源，再用每个来源独立的只写令牌提交事件。" src="assets/sourceapi-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="信息源 API：用 WebUI 管理令牌注册来源，再用每个来源独立的只写令牌提交事件。" src="assets/sourceapi-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -401,10 +365,8 @@ Notion 是内置的。Gmail、Outlook、GitHub、Google Calendar、Linear、Goog
 - 相同的重试会复用原来的任务；事件 ID 冲突会被拒绝。
 - 原始 JSON 会作为可哈希校验的证据保留，由此产生的记录要等你审核。
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/badge-caution-zh-dark.svg">
-  <img alt="小心" src="assets/badge-caution-zh-light.svg" height="30">
-</picture>
+<img alt="小心" src="assets/badge-caution-zh-light.svg#gh-light-mode-only" height="30">
+<img alt="小心" src="assets/badge-caution-zh-dark.svg#gh-dark-mode-only" height="30">
 
 不要把 WebUI 管理令牌交给连接器，也不要把这个 API 暴露到公网。
 
@@ -426,10 +388,8 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -441,19 +401,15 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 
 在 **设置 → 通用 → 软件更新** 中更新。**更新并重启**会校验安装包、备份本地数据和配置，并检查重启后的应用状态。不需要云端账号，已有连接和本地数据都会保留。详见[更新与恢复说明][updates]。
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/badge-note-zh-dark.svg">
-  <img alt="注意" src="assets/badge-note-zh-light.svg" height="30">
-</picture>
+<img alt="注意" src="assets/badge-note-zh-light.svg#gh-light-mode-only" height="30">
+<img alt="注意" src="assets/badge-note-zh-dark.svg#gh-dark-mode-only" height="30">
 
 最初的 v0.1.7 没有更新器，需要用本版安装器手动安装一次。升级前先备份完整的数据目录。历史版本仍然可用，供回滚使用。
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-zh-dark.svg">
-  <img alt="" src="assets/divider-zh-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -469,10 +425,8 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/fourth-quadrant-dark.svg">
-  <img alt="Fourth Quadrant" src="assets/fourth-quadrant-light.svg" height="40">
-</picture>
+<img alt="Fourth Quadrant" src="assets/fourth-quadrant-light.svg#gh-light-mode-only" height="40">
+<img alt="Fourth Quadrant" src="assets/fourth-quadrant-dark.svg#gh-dark-mode-only" height="40">
 
 </div>
 

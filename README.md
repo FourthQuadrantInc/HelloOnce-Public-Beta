@@ -1,9 +1,7 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/opening-dark.webp">
-  <img alt="helloOnce: the little h drops in, waves hello and throws out its name." src="assets/opening-light.webp" width="100%">
-</picture>
+<img alt="helloOnce: the little h drops in, waves hello and throws out its name." src="assets/opening-light.webp#gh-light-mode-only" width="100%">
+<img alt="helloOnce: the little h drops in, waves hello and throws out its name." src="assets/opening-dark.webp#gh-dark-mode-only" width="100%">
 
 ### Say hello once. Every agent knows you.
 
@@ -15,10 +13,8 @@ HelloOnce is your private database. The originals of your conversations, recordi
 
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-en-dark.svg">
-  <img alt="Files, phone recordings, Notion and the source API flow into HelloOnce on your computer, which serves Codex, Claude Code and Claude Desktop over MCP." src="assets/architecture-en-light.svg" width="100%">
-</picture>
+<img alt="Files, phone recordings, Notion and the source API flow into HelloOnce on your computer, which serves Codex, Claude Code and Claude Desktop over MCP." src="assets/architecture-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Files, phone recordings, Notion and the source API flow into HelloOnce on your computer, which serves Codex, Claude Code and Claude Desktop over MCP." src="assets/architecture-en-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>Four kinds of input, one local store, and any agent that speaks MCP.</sub>
 
@@ -30,10 +26,8 @@ HelloOnce is your private database. The originals of your conversations, recordi
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/glance-en-dark.svg">
-  <img alt="Version 0.1.20, storage on your computer, a local WebUI, and MCP with 14 tools." src="assets/glance-en-light.svg" width="100%">
-</picture>
+<img alt="Version 0.1.20, storage on your computer, a local WebUI, and MCP with 14 tools." src="assets/glance-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Version 0.1.20, storage on your computer, a local WebUI, and MCP with 14 tools." src="assets/glance-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -43,10 +37,8 @@ HelloOnce is your private database. The originals of your conversations, recordi
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -58,10 +50,8 @@ Your wallet runs on the computer you already own: it keeps your originals, build
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/capabilities-en-dark.svg">
-  <img alt="Six capabilities: local storage, files with evidence, MCP for Codex and Claude, phone recordings, Notion sync, and configurable models." src="assets/capabilities-en-light.svg" width="100%">
-</picture>
+<img alt="Six capabilities: local storage, files with evidence, MCP for Codex and Claude, phone recordings, Notion sync, and configurable models." src="assets/capabilities-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Six capabilities: local storage, files with evidence, MCP for Codex and Claude, phone recordings, Notion sync, and configurable models." src="assets/capabilities-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -71,10 +61,8 @@ Your wallet runs on the computer you already own: it keeps your originals, build
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/lifecycle-en-dark.svg">
-  <img alt="A fact told to Codex is saved once into your private database as a record waiting for review, then answered by Claude Code later without the user re-explaining it." src="assets/lifecycle-en-light.svg" width="100%">
-</picture>
+<img alt="A fact told to Codex is saved once into your private database as a record waiting for review, then answered by Claude Code later without the user re-explaining it." src="assets/lifecycle-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="A fact told to Codex is saved once into your private database as a record waiting for review, then answered by Claude Code later without the user re-explaining it." src="assets/lifecycle-en-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>Tell once. The next agent already knows.</sub>
 
@@ -84,10 +72,8 @@ Your wallet runs on the computer you already own: it keeps your originals, build
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -115,10 +101,8 @@ The page that opens shows **Get started** on its home: **let your assistants use
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/platforms-en-dark.svg">
-  <img alt="Native packages for macOS Apple Silicon, Linux x86_64 and Windows x64, with their requirements." src="assets/platforms-en-light.svg" width="100%">
-</picture>
+<img alt="Native packages for macOS Apple Silicon, Linux x86_64 and Windows x64, with their requirements." src="assets/platforms-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Native packages for macOS Apple Silicon, Linux x86_64 and Windows x64, with their requirements." src="assets/platforms-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -193,10 +177,8 @@ helloonce-v0.1.20-windows-x86_64.zip
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -228,10 +210,8 @@ The data files take their new names on first start; only names change. The comma
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -266,10 +246,8 @@ Tool use ultimately depends on the client model, so these are server instruction
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -281,10 +259,8 @@ The HelloOnce Android app sends what you turn on in it: contacts, calendar, text
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/phone-en-dark.svg">
-  <img alt="Phone recording pipeline: recorded and encrypted on the phone, relayed as ciphertext only, decrypted and transcribed on your computer, then saved as records waiting for review." src="assets/phone-en-light.svg" width="100%">
-</picture>
+<img alt="Phone recording pipeline: recorded and encrypted on the phone, relayed as ciphertext only, decrypted and transcribed on your computer, then saved as records waiting for review." src="assets/phone-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Phone recording pipeline: recorded and encrypted on the phone, relayed as ciphertext only, decrypted and transcribed on your computer, then saved as records waiting for review." src="assets/phone-en-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>The key never leaves the phone, so the relay never holds anything readable.</sub>
 
@@ -297,10 +273,8 @@ The HelloOnce Android app sends what you turn on in it: contacts, calendar, text
 3. **Scan.** Tap **Scan to pair** in the app and scan the code.
 4. **Choose.** Turn on the kinds you want in the app and allow access when asked. Each kind arrives as its own records, and your phone's page in HelloOnce shows what has arrived. Recordings are transcribed with your speech model (signing in to a HelloOnce account sets one up).
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/badge-warning-dark.svg">
-  <img alt="Warning" src="assets/badge-warning-light.svg" height="30">
-</picture>
+<img alt="Warning" src="assets/badge-warning-light.svg#gh-light-mode-only" height="30">
+<img alt="Warning" src="assets/badge-warning-dark.svg#gh-dark-mode-only" height="30">
 
 The pairing QR code contains private keys. Do not screenshot or share it. It hides itself after three minutes.
 
@@ -330,10 +304,8 @@ See the [phone recording guide][mobile] for the protocol and security boundaries
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -360,10 +332,8 @@ See the [connection guide][connectors].
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -373,10 +343,8 @@ See the [connection guide][connectors].
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/boundary-en-dark.svg">
-  <img alt="Data boundary map: your private database and its evidence stay on your computer; the relay only ever handles ciphertext; model processing goes only to endpoints you configure." src="assets/boundary-en-light.svg" width="100%">
-</picture>
+<img alt="Data boundary map: your private database and its evidence stay on your computer; the relay only ever handles ciphertext; model processing goes only to endpoints you configure." src="assets/boundary-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Data boundary map: your private database and its evidence stay on your computer; the relay only ever handles ciphertext; model processing goes only to endpoints you configure." src="assets/boundary-en-dark.svg#gh-dark-mode-only" width="100%">
 
 <sub>Three zones, three different levels of trust.</sub>
 
@@ -392,10 +360,8 @@ See the [connection guide][connectors].
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -407,10 +373,8 @@ Register local information sources, such as smart-home hubs, and submit their ev
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/sourceapi-en-dark.svg">
-  <img alt="Source API: register a source with the WebUI admin token, then submit events with a per-source write-only token." src="assets/sourceapi-en-light.svg" width="100%">
-</picture>
+<img alt="Source API: register a source with the WebUI admin token, then submit events with a per-source write-only token." src="assets/sourceapi-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Source API: register a source with the WebUI admin token, then submit events with a per-source write-only token." src="assets/sourceapi-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -423,10 +387,8 @@ Register local information sources, such as smart-home hubs, and submit their ev
 - Identical retries reuse the original job; conflicting event IDs are rejected.
 - The original JSON is kept as hash-verified evidence, and resulting records wait for your review.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/badge-caution-dark.svg">
-  <img alt="Caution" src="assets/badge-caution-light.svg" height="30">
-</picture>
+<img alt="Caution" src="assets/badge-caution-light.svg#gh-light-mode-only" height="30">
+<img alt="Caution" src="assets/badge-caution-dark.svg#gh-dark-mode-only" height="30">
 
 Do not give the WebUI admin token to a connector, and do not expose the API to the public internet.
 
@@ -448,10 +410,8 @@ See the [source API contract and examples][source-api], including Windows PowerS
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -463,19 +423,15 @@ Version **0.1.20** is available for macOS (Apple Silicon) and Windows (x64). The
 
 Update from **Settings → General → Software updates**. **Update and restart** verifies the package, backs up your data and configuration, and checks the restarted app. No cloud account is required, and existing connections and local data are kept. See the [update and recovery guide][updates].
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/badge-note-dark.svg">
-  <img alt="Note" src="assets/badge-note-light.svg" height="30">
-</picture>
+<img alt="Note" src="assets/badge-note-light.svg#gh-light-mode-only" height="30">
+<img alt="Note" src="assets/badge-note-dark.svg#gh-dark-mode-only" height="30">
 
 The original v0.1.7 build has no updater; install once manually with this release's installer. Back up your complete data directory before upgrading. Previous releases remain available for recovery.
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-en-dark.svg">
-  <img alt="" src="assets/divider-en-light.svg" width="100%">
-</picture>
+<img alt="" src="assets/divider-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="" src="assets/divider-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -491,10 +447,8 @@ This is the public distribution repository for HelloOnce (the `helloonce` applic
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/fourth-quadrant-dark.svg">
-  <img alt="Fourth Quadrant" src="assets/fourth-quadrant-light.svg" height="40">
-</picture>
+<img alt="Fourth Quadrant" src="assets/fourth-quadrant-light.svg#gh-light-mode-only" height="40">
+<img alt="Fourth Quadrant" src="assets/fourth-quadrant-dark.svg#gh-dark-mode-only" height="40">
 
 </div>
 

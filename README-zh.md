@@ -468,6 +468,17 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 <br>
 
 <div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/fourth-quadrant-dark.svg">
+  <img alt="Fourth Quadrant" src="assets/fourth-quadrant-light.svg" height="40">
+</picture>
+
+</div>
+
+<br>
+
+<div align="center">
 <sub><a href="#top">回到顶部</a> &nbsp;·&nbsp; <a href="README.md">English</a></sub>
 </div>
 

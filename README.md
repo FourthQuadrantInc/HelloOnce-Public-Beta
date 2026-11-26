@@ -490,6 +490,17 @@ This is the public distribution repository for HelloOnce (the `helloonce` applic
 <br>
 
 <div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/fourth-quadrant-dark.svg">
+  <img alt="Fourth Quadrant" src="assets/fourth-quadrant-light.svg" height="40">
+</picture>
+
+</div>
+
+<br>
+
+<div align="center">
 <sub><a href="#top">Back to top</a> &nbsp;·&nbsp; <a href="README-zh.md">简体中文</a></sub>
 </div>
 

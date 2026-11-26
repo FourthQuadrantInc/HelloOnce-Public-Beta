@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480" role="img" aria-label="数据边界图：记录与证据留在你的电脑上；中转只经手密文；模型处理只发往你配置的端点。">
 <defs>
   <radialGradient id="halo" cx="50%" cy="50%" r="50%">
-    <stop offset="0" stop-color="#FF7A70" stop-opacity=".55"/>
-    <stop offset=".45" stop-color="#FF7A70" stop-opacity=".18"/>
-    <stop offset="1" stop-color="#FF7A70" stop-opacity="0"/>
+    <stop offset="0" stop-color="#8A908C" stop-opacity=".55"/>
+    <stop offset=".45" stop-color="#8A908C" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#8A908C" stop-opacity="0"/>
   </radialGradient>
   <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#FFFFFF"/>
     <stop offset="1" stop-color="#FFFFFF"/>
   </linearGradient>
   <linearGradient id="cardAltGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#F6F8FA"/>
-    <stop offset="1" stop-color="#F6F8FA"/>
+    <stop offset="0" stop-color="#F4F3EF"/>
+    <stop offset="1" stop-color="#F4F3EF"/>
   </linearGradient>
   <filter id="soft" x="-30%" y="-30%" width="160%" height="180%">
-    <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(31,35,40,.13)" flood-opacity="1"/>
+    <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="rgba(21,25,27,.12)" flood-opacity="1"/>
   </filter>
   <filter id="softSm" x="-30%" y="-30%" width="160%" height="180%">
-    <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="rgba(31,35,40,.13)" flood-opacity=".8"/>
+    <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="rgba(21,25,27,.12)" flood-opacity=".8"/>
   </filter></defs>
 <style>
   .s{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI Variable Display', 'Segoe UI', 'Helvetica Neue', Arial, 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', sans-serif}
@@ -55,42 +55,42 @@
 
 <rect width="1280" height="480" fill="#FFFFFF"/>
 
-<rect x="48" y="76" width="464" height="312" rx="24" fill="#FFFFFF" stroke="#DDE3E9" stroke-width="1"/>
-<rect x="78" y="102" width="36" height="3.5" rx="1.8" fill="#B62E28" />
-<text x="78" y="134" font-size="13" font-weight="700" fill="#8B949E" letter-spacing="1.5" class="s">区域 01</text>
-<text x="78" y="166" font-size="23" font-weight="650" fill="#0D1117" class="s">在你的电脑上</text>
-<line x1="78" y1="186" x2="482" y2="186" stroke="#DDE3E9" stroke-width="1" stroke-linecap="round" />
-<circle cx="85" cy="214" r="3.4" fill="#B62E28" />
-  <text x="100" y="220" font-size="18" font-weight="400" fill="#3D444D" class="s">记录、文件和证据</text><circle cx="85" cy="248" r="3.4" fill="#B62E28" />
-  <text x="100" y="254" font-size="18" font-weight="400" fill="#3D444D" class="s">原始上传件，原样保留</text><circle cx="85" cy="282" r="3.4" fill="#B62E28" />
-  <text x="100" y="288" font-size="18" font-weight="400" fill="#3D444D" class="s">本机 WebUI · 127.0.0.1:8765</text><circle cx="85" cy="316" r="3.4" fill="#B62E28" />
-  <text x="100" y="322" font-size="18" font-weight="400" fill="#3D444D" class="s">访问令牌与配对密钥</text>
-<text x="78" y="368" font-size="16" font-weight="500" fill="#8B949E" class="s">只有你能读取。</text>
+<rect x="48" y="76" width="464" height="312" rx="24" fill="#FFFFFF" stroke="#E2E2DD" stroke-width="1"/>
+<rect x="78" y="102" width="36" height="3.5" rx="1.8" fill="#4B5351" />
+<text x="78" y="134" font-size="13" font-weight="700" fill="#7C8481" letter-spacing="1.5" class="s">区域 01</text>
+<text x="78" y="166" font-size="23" font-weight="650" fill="#15191B" class="s">在你的电脑上</text>
+<line x1="78" y1="186" x2="482" y2="186" stroke="#E2E2DD" stroke-width="1" stroke-linecap="round" />
+<circle cx="85" cy="214" r="3.4" fill="#4B5351" />
+  <text x="100" y="220" font-size="18" font-weight="400" fill="#353B3A" class="s">记录、文件和证据</text><circle cx="85" cy="248" r="3.4" fill="#4B5351" />
+  <text x="100" y="254" font-size="18" font-weight="400" fill="#353B3A" class="s">原始上传件，原样保留</text><circle cx="85" cy="282" r="3.4" fill="#4B5351" />
+  <text x="100" y="288" font-size="18" font-weight="400" fill="#353B3A" class="s">本机 WebUI · 127.0.0.1:8765</text><circle cx="85" cy="316" r="3.4" fill="#4B5351" />
+  <text x="100" y="322" font-size="18" font-weight="400" fill="#353B3A" class="s">访问令牌与配对密钥</text>
+<text x="78" y="368" font-size="16" font-weight="500" fill="#7C8481" class="s">只有你能读取。</text>
 
-<rect x="578" y="76" width="228" height="312" rx="24" fill="#F6F8FA" stroke="#DDE3E9" stroke-width="1"/>
-<rect x="606" y="102" width="36" height="3.5" rx="1.8" fill="#F0736A" />
-<text x="606" y="134" font-size="13" font-weight="700" fill="#8B949E" letter-spacing="1.5" class="s">区域 02</text>
-<text x="606" y="166" font-size="23" font-weight="650" fill="#0D1117" class="s">中转</text>
-<line x1="606" y1="186" x2="778" y2="186" stroke="#DDE3E9" stroke-width="1" stroke-linecap="round" />
-<text x="606" y="220" font-size="18" font-weight="400" fill="#3D444D" class="s">只经手密文</text>
-<text x="606" y="264" font-size="16" font-weight="400" fill="#59636E" class="s">从不接触密钥。</text>
-<text x="606" y="288" font-size="16" font-weight="400" fill="#59636E" class="s">无人取走的密文</text>
-<text x="606" y="310" font-size="16" font-weight="400" fill="#59636E" class="s">7 天后自动删除。</text>
+<rect x="578" y="76" width="228" height="312" rx="24" fill="#F4F3EF" stroke="#E2E2DD" stroke-width="1"/>
+<rect x="606" y="102" width="36" height="3.5" rx="1.8" fill="#8A908C" />
+<text x="606" y="134" font-size="13" font-weight="700" fill="#7C8481" letter-spacing="1.5" class="s">区域 02</text>
+<text x="606" y="166" font-size="23" font-weight="650" fill="#15191B" class="s">中转</text>
+<line x1="606" y1="186" x2="778" y2="186" stroke="#E2E2DD" stroke-width="1" stroke-linecap="round" />
+<text x="606" y="220" font-size="18" font-weight="400" fill="#353B3A" class="s">只经手密文</text>
+<text x="606" y="264" font-size="16" font-weight="400" fill="#4B5351" class="s">从不接触密钥。</text>
+<text x="606" y="288" font-size="16" font-weight="400" fill="#4B5351" class="s">无人取走的密文</text>
+<text x="606" y="310" font-size="16" font-weight="400" fill="#4B5351" class="s">7 天后自动删除。</text>
 
 
-<rect x="872" y="76" width="356" height="312" rx="24" fill="#FFFFFF" stroke="#DDE3E9" stroke-width="1"/>
-<rect x="902" y="102" width="36" height="3.5" rx="1.8" fill="#FF4B47" />
-<text x="902" y="134" font-size="13" font-weight="700" fill="#8B949E" letter-spacing="1.5" class="s">区域 03</text>
-<text x="902" y="166" font-size="23" font-weight="650" fill="#0D1117" class="s">你配置的端点</text>
-<line x1="902" y1="186" x2="1198" y2="186" stroke="#DDE3E9" stroke-width="1" stroke-linecap="round" />
-<circle cx="909" cy="214" r="3.4" fill="#FF4B47" />
-  <text x="924" y="220" font-size="17" font-weight="400" fill="#3D444D" class="s">自建模型端点</text><circle cx="909" cy="248" r="3.4" fill="#FF4B47" />
-  <text x="924" y="254" font-size="17" font-weight="400" fill="#3D444D" class="s">HelloOnce 账号（若已登录）</text><circle cx="909" cy="282" r="3.4" fill="#FF4B47" />
-  <text x="924" y="288" font-size="17" font-weight="400" fill="#3D444D" class="s">语音：经中转调用 FireRed</text>
-<text x="902" y="368" font-size="16" font-weight="500" fill="#8B949E" class="s">只发送你选择的内容。</text>
+<rect x="872" y="76" width="356" height="312" rx="24" fill="#FFFFFF" stroke="#E2E2DD" stroke-width="1"/>
+<rect x="902" y="102" width="36" height="3.5" rx="1.8" fill="#15191B" />
+<text x="902" y="134" font-size="13" font-weight="700" fill="#7C8481" letter-spacing="1.5" class="s">区域 03</text>
+<text x="902" y="166" font-size="23" font-weight="650" fill="#15191B" class="s">你配置的端点</text>
+<line x1="902" y1="186" x2="1198" y2="186" stroke="#E2E2DD" stroke-width="1" stroke-linecap="round" />
+<circle cx="909" cy="214" r="3.4" fill="#15191B" />
+  <text x="924" y="220" font-size="17" font-weight="400" fill="#353B3A" class="s">自建模型端点</text><circle cx="909" cy="248" r="3.4" fill="#15191B" />
+  <text x="924" y="254" font-size="17" font-weight="400" fill="#353B3A" class="s">HelloOnce 账号（若已登录）</text><circle cx="909" cy="282" r="3.4" fill="#15191B" />
+  <text x="924" y="288" font-size="17" font-weight="400" fill="#353B3A" class="s">语音：经中转调用 FireRed</text>
+<text x="902" y="368" font-size="16" font-weight="500" fill="#7C8481" class="s">只发送你选择的内容。</text>
 
-<line x1="512" y1="214" x2="578" y2="214" stroke="#8B949E" stroke-width="1.6" stroke-dasharray="5 6" class="march"/>
-<line x1="806" y1="214" x2="872" y2="214" stroke="#8B949E" stroke-width="1.6" stroke-dasharray="5 6" class="march"/>
+<line x1="512" y1="214" x2="578" y2="214" stroke="#7C8481" stroke-width="1.6" stroke-dasharray="5 6" class="march"/>
+<line x1="806" y1="214" x2="872" y2="214" stroke="#7C8481" stroke-width="1.6" stroke-dasharray="5 6" class="march"/>
 
-<text x="640" y="426" font-size="19" font-weight="400" fill="#59636E" text-anchor="middle" class="s">HelloOnce 网站无法读取你的记录或本机访问令牌。</text>
+<text x="640" y="426" font-size="19" font-weight="400" fill="#4B5351" text-anchor="middle" class="s">HelloOnce 网站无法读取你的记录或本机访问令牌。</text>
 </svg>

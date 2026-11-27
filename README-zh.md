@@ -9,7 +9,7 @@ HelloOnce 是你的数据钱包。聊天、录音、照片、邮件和日历的�
 
 [**安装**](#02--安装) &nbsp;·&nbsp; [新版本](#03--0121-新内容) &nbsp;·&nbsp; [Releases][releases] &nbsp;·&nbsp; [English](README.md)
 
-> **最新版：HelloOnce 0.1.21**，macOS（Apple 芯片）。Windows（x64）目前是 0.1.20，Linux（x86_64）是 0.1.9，各自出新包前保持不变。已经装好的，打开**设置 → 通用 → 软件更新**。
+> **最新版：HelloOnce 0.1.21**，macOS（Apple 芯片）和 Windows（x64）。Linux（x86_64）目前是 0.1.9，出新包前保持不变。已经装好的，打开**设置 → 通用 → 软件更新**。
 
 <br>
 
@@ -99,8 +99,8 @@ https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/d
 
 <div align="center">
 
-<img alt="各平台安装包：macOS Apple 芯片 0.1.21、Linux x86_64 0.1.9、Windows x64 0.1.20，及其系统要求。" src="assets/platforms-zh-light.svg#gh-light-mode-only" width="100%">
-<img alt="各平台安装包：macOS Apple 芯片 0.1.21、Linux x86_64 0.1.9、Windows x64 0.1.20，及其系统要求。" src="assets/platforms-zh-dark.svg#gh-dark-mode-only" width="100%">
+<img alt="各平台安装包：macOS Apple 芯片 0.1.21、Linux x86_64 0.1.9、Windows x64 0.1.21，及其系统要求。" src="assets/platforms-zh-light.svg#gh-light-mode-only" width="100%">
+<img alt="各平台安装包：macOS Apple 芯片 0.1.21、Linux x86_64 0.1.9、Windows x64 0.1.21，及其系统要求。" src="assets/platforms-zh-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -109,7 +109,7 @@ https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/d
 | 平台 | 系统要求 | 最新安装包 |
 |---|---|---|
 | macOS（Apple 芯片） | macOS 14 或更高 | [0.1.21][release] |
-| Windows（x64） | Windows 10/11 | [0.1.20][release-0120] |
+| Windows（x64） | Windows 10/11 | [0.1.21][release] |
 | Linux（x86_64） | glibc 2.35 或更高（如 Ubuntu 22.04+） | [0.1.9][release-019] |
 
 没有 Intel Mac 安装包。运行安装器需要 Python 3.9+（Windows 上用 `py -3 install.py …`）；程序本身自带运行环境。
@@ -128,7 +128,7 @@ https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/d
    Windows PowerShell Get-FileHash .\install.py -Algorithm SHA256
    ```
 
-3. 用该发布页的版本号运行安装器（macOS 用 `v0.1.21`，Windows 用 `v0.1.20`，Linux 用 `v0.1.9`）：
+3. 用该发布页的版本号运行安装器（macOS 和 Windows 用 `v0.1.21`，Linux 用 `v0.1.9`）：
 
    ```bash
    python3 install.py --version v0.1.21 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
@@ -142,7 +142,7 @@ https://raw.githubusercontent.com/FourthQuadrantInc/HelloOnce-Public-Beta/main/d
 
 ```text
 helloonce-v0.1.21-macos-arm64.tar.gz
-helloonce-v0.1.20-windows-x86_64.zip
+helloonce-v0.1.21-windows-x86_64.zip
 openworld-memory-v0.1.9-linux-x86_64.tar.gz
 ```
 
@@ -167,7 +167,7 @@ openworld-memory-v0.1.9-linux-x86_64.tar.gz
 
 ## 03 · 0.1.21 新内容
 
-2026 年 11 月 27 日发布，macOS（Apple 芯片）。
+2026 年 11 月 27 日发布 macOS（Apple 芯片）版，Windows（x64）版于 11 月 28 日跟上。
 
 - **又有四个 Agent 能把聊天回传：** 除了 Codex 和 Claude Code，新增 Antigravity、Cursor、WorkBuddy / CodeBuddy 和 Gemini CLI。接上时补回最近三个月。
 - **又有七个 Agent 可以在 Agents 页接上：** OpenClaw、OpenCode、Antigravity CLI、Kimi Code CLI、GitHub Copilot CLI、Cherry Studio 和 TRAE CN。它们暂时还不能回传聊天，页面会如实说明。
@@ -177,7 +177,7 @@ openworld-memory-v0.1.9-linux-x86_64.tar.gz
 - **添加手机**的窗口里 iPhone 和安卓并排。
 - **更稳：** 调用模型期间，读取 HelloOnce 的 Agent 不会再因"数据库被锁"失败。
 
-完整说明：[0.1.21](docs/releases/0.1.21.zh-CN.md)。更早的版本：[0.1.20](docs/releases/0.1.20.zh-CN.md)（Windows）· [0.1.19](docs/releases/0.1.19.zh-CN.md) · [0.1.13](docs/releases/0.1.13.zh-CN.md) · [0.1.9](docs/releases/0.1.9.zh-CN.md)（Linux）· [全部发布][releases]。
+完整说明：[0.1.21](docs/releases/0.1.21.zh-CN.md)。更早的版本：[0.1.20](docs/releases/0.1.20.zh-CN.md) · [0.1.19](docs/releases/0.1.19.zh-CN.md) · [0.1.13](docs/releases/0.1.13.zh-CN.md) · [0.1.9](docs/releases/0.1.9.zh-CN.md)（Linux）· [全部发布][releases]。
 
 <div align="center">
 
@@ -408,7 +408,6 @@ POST /api/sources/{source_id}/events     -> 每个来源的令牌
 <br>
 
 [release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.21
-[release-0120]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.20
 [release-019]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.9
 [releases]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases
 [android]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.21/helloonce-android-v2.0.0.apk

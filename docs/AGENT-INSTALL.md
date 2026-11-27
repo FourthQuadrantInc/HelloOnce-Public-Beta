@@ -48,7 +48,7 @@ Anything else: install with `--clients none`, then follow §6 "Other agents".
 
 Work in a new empty temporary directory.
 
-1. Get the latest release metadata: `https://api.github.com/repos/FourthQuadrantInc/HelloOnce-Public-Beta/releases/latest`. Note `tag_name` (e.g. `v0.1.20`) and check the asset list for the native package for this computer. If the latest release has no matching package, stop before modifying an existing installation. For Linux x86_64, the most recent public package is in [v0.1.9](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.9).
+1. Get the latest release metadata: `https://api.github.com/repos/FourthQuadrantInc/HelloOnce-Public-Beta/releases/latest`. Note `tag_name` (e.g. `v0.1.21`) and check the asset list for the native package for this computer. If the latest release has no matching package, stop before modifying an existing installation. For Linux x86_64, the most recent public package is in [v0.1.9](https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.9).
 2. Download its `install.py` and `SHA256SUMS` assets.
 3. Hash `install.py` (`shasum -a 256` · `sha256sum` · `Get-FileHash -Algorithm SHA256`) and compare with its line in `SHA256SUMS`. **Mismatch: stop**, delete the downloads, tell the person.
 4. Do not run anything else from that directory. The installer verifies the native package against `SHA256SUMS` itself.

@@ -79,7 +79,7 @@
 <text x="906.67" y="94" font-size="21" font-weight="600" fill="#E7E7E8" class="s">Windows</text>
 <text x="906.67" y="120" font-size="16" font-weight="400" fill="#7A7C7F" class="s">x64</text>
 <rect x="878.67" y="138" width="337.33" height="46" rx="10" fill="#14181E" />
-<text x="892.67" y="158" font-size="14" font-weight="400" fill="#CACBCC" class="m">helloonce-v0.1.20-</text><text x="892.67" y="176" font-size="14" font-weight="400" fill="#CACBCC" class="m">windows-x86_64.zip</text>
+<text x="892.67" y="158" font-size="14" font-weight="400" fill="#CACBCC" class="m">helloonce-v0.1.21-</text><text x="892.67" y="176" font-size="14" font-weight="400" fill="#CACBCC" class="m">windows-x86_64.zip</text>
 <text x="878.67" y="208" font-size="16" font-weight="400" fill="#A3A5A7" class="s">系统要求</text>
 <text x="878.67" y="230" font-size="16" font-weight="400" fill="#A3A5A7" class="s">Windows 10/11</text>
 <text x="640" y="296" font-size="17" font-weight="400" fill="#7A7C7F" text-anchor="middle" class="s">安装器需要 Python 3.9+；独立可执行文件自带运行环境。</text>

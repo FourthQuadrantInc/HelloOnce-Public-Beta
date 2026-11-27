@@ -9,7 +9,7 @@ HelloOnce is your data wallet. It keeps the originals of your chats, recordings,
 
 [**Install**](#02--install) &nbsp;·&nbsp; [What's new](#03--whats-new-in-0121) &nbsp;·&nbsp; [Releases][releases] &nbsp;·&nbsp; [简体中文](README-zh.md)
 
-> **Latest: HelloOnce 0.1.21** for macOS (Apple Silicon). Windows (x64) is on 0.1.20 and Linux (x86_64) on 0.1.9 until their next packages. Already installed? Open **Settings → General → Software updates**.
+> **Latest: HelloOnce 0.1.21** for macOS (Apple Silicon) and Windows (x64). Linux (x86_64) is on 0.1.9 until its next package. Already installed? Open **Settings → General → Software updates**.
 
 <br>
 
@@ -99,8 +99,8 @@ To have your data organized, sign in to a HelloOnce account or add your own mode
 
 <div align="center">
 
-<img alt="Native packages: macOS Apple Silicon 0.1.21, Linux x86_64 0.1.9 and Windows x64 0.1.20, with their requirements." src="assets/platforms-en-light.svg#gh-light-mode-only" width="100%">
-<img alt="Native packages: macOS Apple Silicon 0.1.21, Linux x86_64 0.1.9 and Windows x64 0.1.20, with their requirements." src="assets/platforms-en-dark.svg#gh-dark-mode-only" width="100%">
+<img alt="Native packages: macOS Apple Silicon 0.1.21, Linux x86_64 0.1.9 and Windows x64 0.1.21, with their requirements." src="assets/platforms-en-light.svg#gh-light-mode-only" width="100%">
+<img alt="Native packages: macOS Apple Silicon 0.1.21, Linux x86_64 0.1.9 and Windows x64 0.1.21, with their requirements." src="assets/platforms-en-dark.svg#gh-dark-mode-only" width="100%">
 
 </div>
 
@@ -109,7 +109,7 @@ To have your data organized, sign in to a HelloOnce account or add your own mode
 | Platform | Requires | Latest package |
 |---|---|---|
 | macOS (Apple Silicon) | macOS 14 or later | [0.1.21][release] |
-| Windows (x64) | Windows 10/11 | [0.1.20][release-0120] |
+| Windows (x64) | Windows 10/11 | [0.1.21][release] |
 | Linux (x86_64) | glibc 2.35 or later (Ubuntu 22.04+) | [0.1.9][release-019] |
 
 There is no Intel Mac package. The installer needs Python 3.9+ (on Windows run it as `py -3 install.py …`); the app itself carries its own runtime.
@@ -128,7 +128,7 @@ There is no Intel Mac package. The installer needs Python 3.9+ (on Windows run i
    Windows PowerShell Get-FileHash .\install.py -Algorithm SHA256
    ```
 
-3. Run the installer with that release's version (`v0.1.21` on macOS, `v0.1.20` on Windows, `v0.1.9` on Linux):
+3. Run the installer with that release's version (`v0.1.21` on macOS and Windows, `v0.1.9` on Linux):
 
    ```bash
    python3 install.py --version v0.1.21 --repo FourthQuadrantInc/HelloOnce-Public-Beta --clients claude --start --autostart
@@ -142,7 +142,7 @@ Package file names, for scripting a download:
 
 ```text
 helloonce-v0.1.21-macos-arm64.tar.gz
-helloonce-v0.1.20-windows-x86_64.zip
+helloonce-v0.1.21-windows-x86_64.zip
 openworld-memory-v0.1.9-linux-x86_64.tar.gz
 ```
 
@@ -167,7 +167,7 @@ openworld-memory-v0.1.9-linux-x86_64.tar.gz
 
 ## 03 · What's new in 0.1.21
 
-Released 27 November 2026, for macOS (Apple Silicon).
+Released 27 November 2026 for macOS (Apple Silicon); Windows (x64) followed on 28 November.
 
 - **Four more agents send their conversations back:** Antigravity, Cursor, WorkBuddy / CodeBuddy and Gemini CLI, besides Codex and Claude Code. Connecting one brings in its last three months.
 - **Seven more agents can be connected** from the Agents page: OpenClaw, OpenCode, Antigravity CLI, Kimi Code CLI, GitHub Copilot CLI, Cherry Studio and TRAE CN. They do not send conversations back yet, and the page says so.
@@ -177,7 +177,7 @@ Released 27 November 2026, for macOS (Apple Silicon).
 - **Add a phone** shows the iPhone and Android apps side by side.
 - **Steadier:** agents reading HelloOnce no longer fail with "database is locked" while a model call is running.
 
-Full notes: [0.1.21](docs/releases/0.1.21.md). Earlier: [0.1.20](docs/releases/0.1.20.md) (Windows) · [0.1.19](docs/releases/0.1.19.md) · [0.1.13](docs/releases/0.1.13.md) · [0.1.9](docs/releases/0.1.9.md) (Linux) · [all releases][releases].
+Full notes: [0.1.21](docs/releases/0.1.21.md). Earlier: [0.1.20](docs/releases/0.1.20.md) · [0.1.19](docs/releases/0.1.19.md) · [0.1.13](docs/releases/0.1.13.md) · [0.1.9](docs/releases/0.1.9.md) (Linux) · [all releases][releases].
 
 <div align="center">
 
@@ -408,7 +408,6 @@ This is the public distribution repository for HelloOnce. It holds documentation
 <br>
 
 [release]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.21
-[release-0120]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.20
 [release-019]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/tag/v0.1.9
 [releases]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases
 [android]: https://github.com/FourthQuadrantInc/HelloOnce-Public-Beta/releases/download/v0.1.21/helloonce-android-v2.0.0.apk

@@ -1,0 +1,25 @@
+name: Publish tested 0.1.21 packages
+on:
+  push:
+    branches: [release-publish/v0.1.21-cloud]
+permissions:
+  contents: write
+concurrency:
+  group: publish-public-beta-v0.1.21
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Fetch and check the public distribution
+        env:
+          BUNDLE_URL: ${{ secrets.BETA_0121_STAGED_ARCHIVE_URL }}
+        run: python3 .github/scripts/publish_beta_0121.py verify
+      - name: Upload and check the macOS release draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/publish_beta_0121.py publish

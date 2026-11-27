@@ -56,7 +56,7 @@
 <rect width="1280" height="168" fill="#0D1117"/>
 <g filter="url(#softSm)"><rect x="40" y="34" width="285" height="100" rx="18" fill="url(#cardGrad)" stroke="#35383D" stroke-width="1"/></g>
 <text x="62" y="74" font-size="12" font-weight="700" fill="#7A7C7F" letter-spacing="1.5" class="s">版本</text>
-<text x="62" y="110" font-size="28" font-weight="600" fill="#E7E7E8" class="s">0.1.20</text><g filter="url(#softSm)"><rect x="345" y="34" width="285" height="100" rx="18" fill="url(#cardGrad)" stroke="#35383D" stroke-width="1"/></g>
+<text x="62" y="110" font-size="28" font-weight="600" fill="#E7E7E8" class="s">0.1.21</text><g filter="url(#softSm)"><rect x="345" y="34" width="285" height="100" rx="18" fill="url(#cardGrad)" stroke="#35383D" stroke-width="1"/></g>
 <text x="367" y="74" font-size="12" font-weight="700" fill="#7A7C7F" letter-spacing="1.5" class="s">存储位置</text>
 <text x="367" y="110" font-size="26" font-weight="600" fill="#E7E7E8" class="s">你的电脑</text><g filter="url(#softSm)"><rect x="650" y="34" width="285" height="100" rx="18" fill="url(#cardGrad)" stroke="#35383D" stroke-width="1"/></g>
 <text x="672" y="74" font-size="12" font-weight="700" fill="#7A7C7F" letter-spacing="1.5" class="s">界面</text>
